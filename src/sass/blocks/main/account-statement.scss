@@ -1,0 +1,53 @@
+
+.account-statement {
+
+  .table {
+    display: block;
+
+    tbody {
+      td {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &--top {
+
+    @include flexBox(space-between, row, center, wrap);
+
+    .form-main {
+
+      form {
+        margin: 0 -15px;
+        @include flexBox(flex-start, row, center, wrap);
+
+        >div {
+          margin: 15px;
+          max-width: 140px;
+          min-width: 140px;
+
+          &.form-bot {
+            max-width: 180px;
+          }
+        }
+
+        input {
+          padding-right: 10px;
+        }
+      }
+
+
+    }
+
+    .btn-gray {
+      padding: 7px 20px;
+      color: $white;
+      background: #aeb0b4;
+
+        &:hover {
+          background: #8f9092;
+        }
+    }
+
+  }
+}

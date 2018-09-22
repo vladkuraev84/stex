@@ -1,0 +1,81 @@
+
+.sidebar {
+
+  width: 235px;
+
+  >p {
+    text-align: right;
+    padding-right: 0 !important;
+
+      a {
+        font-size: 1.2rem;
+
+          &:hover {
+            color: #000;
+          }
+      }
+  }
+
+  p {
+    margin: 0;
+    padding: 18px 10px;
+
+  }
+
+  ul {
+    width: auto;
+  }
+
+  li {
+    border-bottom: 1px solid #dddfe2;
+
+
+      &:first-child {
+        border-top: 1px solid #dddfe2;
+      }
+    
+    p {
+      cursor: pointer;
+      @include flexBox(flex-start, row, center, nowrap);
+
+      >span {
+        margin-right: 10px;
+      }
+
+        &:hover {
+          color: $colorBody;
+          
+            span {
+              color: #4c84eb;
+            }
+        }
+    }
+
+    span {
+      font-size: 1.35rem;
+
+    }
+
+  }
+
+}
+
+.tab-content{
+  display: none;
+  padding: 15px;
+}
+
+.tab-content.current{
+  display: inherit;
+}
+
+.tab-link.current {
+  p {
+    color: $colorBody;
+    background: #f9fafb;
+
+    span {
+      color: #4c84eb;
+    }
+  }
+}

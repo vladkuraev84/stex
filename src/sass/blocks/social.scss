@@ -1,0 +1,54 @@
+
+.social {
+
+  @include flexBox(space-between, row, center, nowrap);
+  width: auto;
+  margin: 0 -3px;
+
+  a {
+    margin: 5px 3px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+
+    background-color: #e3e5e7;
+
+    background-size: 14px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+      &:hover {
+        background-size: 16px;
+      }
+  }
+
+}
+
+.quest {
+  background-image: url("../img/question-mark.svg");
+}
+
+.phone {
+  background-image: url("../img/call-answer.svg");
+}
+.in {
+  background-image: url("../img/linkedin-logo.svg");
+}
+.inst {
+  background-image: url("../img/instagram-logo.svg");
+}
+.fac {
+  background-image: url("../img/facebook-logo.svg");
+}
+.sky {
+  background-image: url("../img/skype-logo.svg");
+}
+.yout {
+  background-image: url("../img/yout.svg");
+}
+.twit {
+  background-image: url("../img/twitter-logo-silhouette.svg");
+}

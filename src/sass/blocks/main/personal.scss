@@ -1,0 +1,144 @@
+
+.personal {
+
+  &-wr {
+
+    display: block !important;
+
+    .title {
+      font-size: 1.25rem;
+      color: #212121;
+      @include flexBox(flex-start, row, center, nowrap);
+
+      span {
+        color: #4c84eb;
+        font-size: 1.65rem;
+        margin-right: 15px;
+      }
+
+      &-sub {
+        margin-bottom: 15px;
+      }
+    }
+
+    label {
+      width: 100%;
+      color: #808386;
+    }
+
+    label, .form-main__item {
+      @include flexBox(flex-start, row, center, wrap);
+
+      input[type="checkbox"] {
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+      }
+    }
+
+    .form-main__item--group {
+      margin: 0 -8px;
+
+      input[type=text] {
+        padding-left: 10px;
+      }
+    }
+
+    .form-main__item {
+      margin: 8px;
+
+      &.specify {
+        display: none;
+        max-width: 15rem;
+      }
+
+      span {
+        width: 100%;
+        display: inline-block;
+        color: #808386;
+      }
+
+    }
+
+    .form-main__item {
+      max-width: 100%;
+    }
+
+    .title--sm {
+      font-size: 1.25rem;
+      margin-bottom: .45rem;
+    }
+
+    .display-flex {
+
+      .tooltiptext {
+        margin-left: 0;
+      }
+    }
+
+  }
+
+}
+
+.tabs-per {
+  @include flexBox(flex-start, row, center, nowrap);
+  width: auto;
+  margin: 0 -15px;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 6px;
+    left: 15px;
+    width: 97%;
+    height: 1px;
+    background: #dddfe2;
+    z-index: 1;
+  }
+
+  li {
+    margin: 5px 15px;
+
+    p {
+      padding: 5px 0;
+      margin: 0;
+      line-height: 1;
+      color: $colorBody;
+      border-bottom: 3px solid transparent;
+      cursor: pointer;
+      position: relative;
+      z-index: 2;
+    }
+
+    &.active-per {
+      p {
+        border-color: #4c84eb;
+      }
+    }
+
+  }
+}
+
+.per-tab {
+  display: none;
+
+  &.active-per-tab {
+    display: block;
+  }
+
+  .form-main__item--group {
+    align-items: baseline;
+  }
+}
+
+.main-personal {
+  margin-top: 15px;
+  color: $colorBody;
+
+  .title-sub {
+    font-size: 1.25rem;
+  }
+
+}
+

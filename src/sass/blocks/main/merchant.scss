@@ -1,0 +1,52 @@
+
+
+.merchant {
+
+  &-wr {
+
+    .title {
+
+      font-size: 1.25rem;
+      color: #212121;
+      @include flexBox(flex-start, row, center, nowrap);
+
+        span {
+          color: #4c84eb;
+          font-size: 1.6rem;
+          margin-right: 15px;
+        }
+
+    }
+
+  }
+
+  &-add {
+
+    .btn {
+      font-size: 1.125rem;
+      padding: 15px 25px;
+    }
+
+  }
+
+}
+
+.dots-block {
+  flex: none;
+  width: 35px;
+  @include flexBox(flex-start, row, center, nowrap);
+  margin: 0 0 0 20px;
+
+  i {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #aeb0b4;
+    margin: 2px;
+    flex: none;
+  }
+}

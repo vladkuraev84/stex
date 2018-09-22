@@ -1,0 +1,32 @@
+@import "../../node_modules/normalize.css/normalize";
+
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/helpers";
+@import "utils/fonts";
+@import "utils/button";
+
+* {
+    box-sizing: border-box;
+    outline:none;
+}
+
+//@import "blocks/ui";
+@import "blocks/course-header";
+@import "blocks/header";
+@import "blocks/profile";
+@import "blocks/index";
+@import "blocks/cripto-list";
+@import "blocks/form";
+@import "blocks/checkbox-radio";
+@import "blocks/table";
+@import "blocks/popup";
+@import "blocks/main";
+@import "blocks/footer";
+@import "blocks/languages";
+@import "blocks/progress";
+@import "blocks/social";
+@import "blocks/animation";
+@import "blocks/icomoon";
+@import "blocks/tooltip";
+//@import "blocks/intlTelInput";

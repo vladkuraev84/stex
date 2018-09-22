@@ -1,0 +1,15 @@
+
+.cripto-list {
+  padding-top: 10px;
+
+    ul {
+      @include flexBox(flex-start, row, center, nowrap);
+      width: auto;
+      margin: 0 -.625rem;
+
+    }
+
+    li {
+      margin: 1.25rem .625rem 0;
+    }
+}

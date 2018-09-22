@@ -1,0 +1,480 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?qg3ebd');
+  src:  url('fonts/icomoon.eot?qg3ebd#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?qg3ebd') format('truetype'),
+    url('fonts/icomoon.woff?qg3ebd') format('woff'),
+    url('fonts/icomoon.svg?qg3ebd#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ar-down:before {
+  content: "\e900";
+  color: #b90000;
+}
+.icon-ar-right:before {
+  content: "\e901";
+  color: #fff;
+}
+.icon-ar-up:before {
+  content: "\e902";
+  color: #8bb922;
+}
+.icon-arrow-point-to-right:before {
+  content: "\e903";
+}
+.icon-avatar:before {
+  content: "\e904";
+}
+.icon-call-answer:before {
+  content: "\e905";
+}
+.icon-cart:before {
+  content: "\e906";
+}
+.icon-check-mark:before {
+  content: "\e907";
+  color: #8bb820;
+}
+.icon-close:before {
+  content: "\e908";
+  color: #858688;
+}
+.icon-copy-file:before {
+  content: "\e909";
+}
+.icon-correct-symbol:before {
+  content: "\e90a";
+}
+.icon-document:before {
+  content: "\e90b";
+}
+.icon-down-arrow:before {
+  content: "\e90c";
+  color: #808386;
+}
+.icon-download:before {
+  content: "\e90d";
+}
+.icon-download1:before {
+  content: "\e90e";
+}
+.icon-driving-license:before {
+  content: "\e90f";
+}
+.icon-facebook-logo:before {
+  content: "\e910";
+}
+.icon-financial:before {
+  content: "\e911";
+}
+.icon-go-back-arrow:before {
+  content: "\e912";
+  color: #4c84eb;
+}
+.icon-id-card:before {
+  content: "\e913";
+}
+.icon-if_Bitcoin_272914 .path1:before {
+  content: "\e914";
+  color: rgb(0, 0, 0);
+}
+.icon-if_Bitcoin_272914 .path2:before {
+  content: "\e915";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-if_Bitcoin_2729141 .path1:before {
+  content: "\e916";
+  color: rgb(139, 184, 32);
+}
+.icon-if_Bitcoin_2729141 .path2:before {
+  content: "\e917";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-if_Bitcoin_27291422:before {
+  content: "\e918";
+}
+.icon-if_dash_dashcoin_2844383 .path1:before {
+  content: "\e919";
+  color: rgb(3, 136, 229);
+}
+.icon-if_dash_dashcoin_2844383 .path2:before {
+  content: "\e91a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-if_ETH-alt_1175229:before {
+  content: "\e91b";
+}
+.icon-if_Litecoin_2785456:before {
+  content: "\e91c";
+  color: #bebebe;
+}
+.icon-if_social_mastercard_406085:before {
+  content: "\e91d";
+}
+.icon-if_XRP_1175358:before {
+  content: "\e91e";
+}
+.icon-imac:before {
+  content: "\e91f";
+}
+.icon-information:before {
+  content: "\e920";
+}
+.icon-instagram-logo:before {
+  content: "\e921";
+}
+.icon-linkedin-logo:before {
+  content: "\e922";
+}
+.icon-list-1:before {
+  content: "\e923";
+}
+.icon-list:before {
+  content: "\e924";
+}
+.icon-mastercard-1 .path1:before {
+  content: "\e925";
+  color: rgb(255, 182, 0);
+}
+.icon-mastercard-1 .path2:before {
+  content: "\e926";
+  margin-left: -1em;
+  color: rgb(247, 152, 29);
+}
+.icon-mastercard-1 .path3:before {
+  content: "\e927";
+  margin-left: -1em;
+  color: rgb(255, 133, 0);
+}
+.icon-mastercard-1 .path4:before {
+  content: "\e928";
+  margin-left: -1em;
+  color: rgb(255, 80, 80);
+}
+.icon-mastercard-1 .path5:before {
+  content: "\e929";
+  margin-left: -1em;
+  color: rgb(229, 40, 54);
+}
+.icon-mastercard-1 .path6:before {
+  content: "\e92a";
+  margin-left: -1em;
+  color: rgb(203, 32, 38);
+}
+.icon-mastercard-1 .path7:before {
+  content: "\e92b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-mastercard-1 .path8:before {
+  content: "\e92c";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-mastercard-1 .path9:before {
+  content: "\e92d";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-mastercard-1 .path10:before {
+  content: "\e92e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-mastercard-1 .path11:before {
+  content: "\e92f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-mastercard-1 .path12:before {
+  content: "\e930";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-mastercard-1 .path13:before {
+  content: "\e931";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-mastercard-1 .path14:before {
+  content: "\e932";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-mastercard-1 .path15:before {
+  content: "\e933";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-mastercard-1 .path16:before {
+  content: "\e934";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-mastercard-1 .path17:before {
+  content: "\e935";
+  margin-left: -1em;
+  color: rgb(220, 229, 229);
+}
+.icon-mastercard-1 .path18:before {
+  content: "\e936";
+  margin-left: -1em;
+  color: rgb(220, 229, 229);
+}
+.icon-mastercard-1 .path19:before {
+  content: "\e937";
+  margin-left: -1em;
+  color: rgb(220, 229, 229);
+}
+.icon-mastercard-1 .path20:before {
+  content: "\e938";
+  margin-left: -1em;
+  color: rgb(220, 229, 229);
+}
+.icon-mastercard-1 .path21:before {
+  content: "\e939";
+  margin-left: -1em;
+  color: rgb(220, 229, 229);
+}
+.icon-mastercard-1 .path22:before {
+  content: "\e93a";
+  margin-left: -1em;
+  color: rgb(220, 229, 229);
+}
+.icon-mastercard-1 .path23:before {
+  content: "\e93b";
+  margin-left: -1em;
+  color: rgb(220, 229, 229);
+}
+.icon-mastercard-1 .path24:before {
+  content: "\e93c";
+  margin-left: -1em;
+  color: rgb(220, 229, 229);
+}
+.icon-mastercard-1 .path25:before {
+  content: "\e93d";
+  margin-left: -1em;
+  color: rgb(220, 229, 229);
+}
+.icon-mastercard-1 .path26:before {
+  content: "\e93e";
+  margin-left: -1em;
+  color: rgb(220, 229, 229);
+}
+.icon-mastercard .path1:before {
+  content: "\e93f";
+  color: rgb(113, 116, 119);
+}
+.icon-mastercard .path2:before {
+  content: "\e940";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-mastercard .path3:before {
+  content: "\e941";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-mastercard .path4:before {
+  content: "\e942";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-mastercard .path5:before {
+  content: "\e943";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-mastercard .path6:before {
+  content: "\e944";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-mastercard .path7:before {
+  content: "\e945";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-mastercard .path8:before {
+  content: "\e946";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-mastercard .path9:before {
+  content: "\e947";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-mastercard .path10:before {
+  content: "\e948";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-mastercard .path11:before {
+  content: "\e949";
+  margin-left: -1em;
+  color: rgb(113, 116, 119);
+}
+.icon-mastercard .path12:before {
+  content: "\e94a";
+  margin-left: -1em;
+  color: rgb(113, 116, 119);
+}
+.icon-mastercard .path13:before {
+  content: "\e94b";
+  margin-left: -1em;
+  color: rgb(113, 116, 119);
+}
+.icon-mastercard .path14:before {
+  content: "\e94c";
+  margin-left: -1em;
+  color: rgb(113, 116, 119);
+}
+.icon-mastercard .path15:before {
+  content: "\e94d";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-mastercard .path16:before {
+  content: "\e94e";
+  margin-left: -1em;
+  color: rgb(113, 116, 119);
+}
+.icon-mastercard .path17:before {
+  content: "\e94f";
+  margin-left: -1em;
+  color: rgb(113, 116, 119);
+}
+.icon-mastercard .path18:before {
+  content: "\e950";
+  margin-left: -1em;
+  color: rgb(113, 116, 119);
+}
+.icon-passport:before {
+  content: "\e951";
+}
+.icon-question-mark:before {
+  content: "\e952";
+}
+.icon-refresh:before {
+  content: "\e953";
+}
+.icon-send-mail:before {
+  content: "\e954";
+}
+.icon-settings-work-tool:before {
+  content: "\e955";
+}
+.icon-settings:before {
+  content: "\e956";
+}
+.icon-shield-2:before {
+  content: "\e957";
+}
+.icon-skype-logo:before {
+  content: "\e958";
+}
+.icon-twitter-logo-silhouette:before {
+  content: "\e959";
+}
+.icon-visa-pay-logo:before {
+  content: "\e95a";
+  color: #717477;
+}
+.icon-visa .path1:before {
+  content: "\e95b";
+  color: rgb(60, 88, 191);
+}
+.icon-visa .path2:before {
+  content: "\e95c";
+  margin-left: -1em;
+  color: rgb(41, 54, 136);
+}
+.icon-visa .path3:before {
+  content: "\e95d";
+  margin-left: -1em;
+  color: rgb(60, 88, 191);
+}
+.icon-visa .path4:before {
+  content: "\e95e";
+  margin-left: -1em;
+  color: rgb(41, 54, 136);
+}
+.icon-visa .path5:before {
+  content: "\e95f";
+  margin-left: -1em;
+  color: rgb(60, 88, 191);
+}
+.icon-visa .path6:before {
+  content: "\e960";
+  margin-left: -1em;
+  color: rgb(41, 54, 136);
+}
+.icon-visa .path7:before {
+  content: "\e961";
+  margin-left: -1em;
+  color: rgb(60, 88, 191);
+}
+.icon-visa .path8:before {
+  content: "\e962";
+  margin-left: -1em;
+  color: rgb(41, 54, 136);
+}
+.icon-visa .path9:before {
+  content: "\e963";
+  margin-left: -1em;
+  color: rgb(255, 188, 0);
+}
+.icon-visa .path10:before {
+  content: "\e964";
+  margin-left: -1em;
+  color: rgb(247, 152, 29);
+}
+.icon-visa .path11:before {
+  content: "\e965";
+  margin-left: -1em;
+  color: rgb(237, 124, 0);
+}
+.icon-visa .path12:before {
+  content: "\e966";
+  margin-left: -1em;
+  color: rgb(5, 18, 68);
+}
+.icon-visa .path13:before {
+  content: "\e967";
+  margin-left: -1em;
+  color: rgb(5, 18, 68);
+}
+.icon-visa .path14:before {
+  content: "\e968";
+  margin-left: -1em;
+  color: rgb(5, 18, 68);
+}
+.icon-visa .path15:before {
+  content: "\e969";
+  margin-left: -1em;
+  color: rgb(5, 18, 68);
+}
+.icon-yout:before {
+  content: "\e96a";
+}

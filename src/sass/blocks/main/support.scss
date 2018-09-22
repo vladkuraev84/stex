@@ -1,0 +1,43 @@
+
+.support {
+  margin-top: 10px;
+
+  .form-main {
+
+    .select-file {
+      width: auto;
+      margin: 0;
+    }
+/*
+    .file {
+      width: 100%;
+      padding: 8px 10px;
+      line-height: 1.4;
+      border: 1px solid #dddfe2;
+      border-radius: 5px;
+      background: #f9fafb;
+    }*/
+
+  }
+}
+
+.max-size {
+  font-size: 14px;
+  line-height: 1.71;
+  color: #b0b0b0;
+}
+
+.select-file {
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  padding: 10px 25px;
+  line-height: 1.6;
+  white-space: nowrap;
+  color: #4c84eb;
+  font-size: .93rem;
+  background: linear-gradient(to top, #f3f4f5, #f9fafb);
+  border-left: solid 1px #dddfe2;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}

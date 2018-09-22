@@ -1,0 +1,51 @@
+@mixin respond-to($media) {
+    @if $media == phone {
+        @media only screen and (max-width: $phone) {
+            @content;
+        }
+    }  @else if $media == phone-medium {
+        @media only screen and (max-width: $phone-medium) {
+            @content;
+        }
+
+    } @else if $media == desktop {
+        @media only screen and (max-width: $desktop) {
+            @content;
+        }
+    } @else if $media == tablet {
+        @media only screen and (max-width: $tablet) {
+            @content;
+        }
+    } @else if $media == telephone {
+        @media only screen and (max-width: $telephone) {
+            @content;
+        }
+    } @else if $media == phone-little {
+        @media only screen and (max-width: $phone-little) {
+            @content;
+        }
+    }
+}
+
+@mixin placeholder {
+    &:-moz-placeholder {
+        @content;
+    }
+    &::-moz-placeholder {
+        @content;
+    }
+    &::-webkit-input-placeholder {
+        @content;
+    }
+    &:-ms-input-placeholder {
+        @content;
+    }
+}
+
+@mixin flexBox($justifyContent, $flexDirection, $alignItems, $wrap) {
+    display: flex;
+    justify-content: $justifyContent;
+    flex-direction: $flexDirection;
+    align-items: $alignItems;
+    flex-wrap: $wrap;
+}

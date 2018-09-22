@@ -1,0 +1,49 @@
+
+.address-bitcoin {
+
+  .title {
+
+    font-size: 1.25rem;
+    color: $colorBody;
+
+    @include flexBox(flex-start, row, center, nowrap);
+
+      span {
+        font-size: 3.2rem;
+
+        &.path1 {
+          &:before {
+            color: #f89f36;
+          }
+        }
+      }
+
+    >span {
+      margin-right: 15px;
+    }
+
+  }
+
+
+
+  .form-main {
+
+    margin-top: 1.2rem;
+
+      &__item {
+        position: relative;
+
+        .icon-copy-file {
+          cursor: pointer;
+          position: absolute;
+          right: 10px;
+          bottom: 12px;
+          font-size: 1.1rem;
+          width: auto;
+          margin: 0;
+          color: #aeb0b4;
+        }
+      }
+  }
+
+}

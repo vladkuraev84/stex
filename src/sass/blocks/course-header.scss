@@ -1,0 +1,18 @@
+
+.course-header {
+  background-color: #1c2027;
+  color: $white;
+
+    &--list {
+      @include flexBox(space-between, row, center, wrap);
+      width: auto;
+      margin: 0 -5px;
+    }
+
+    li {
+      flex: 1 1;
+      padding: 12px 0;
+      margin: 3px 5px;
+      font-size: 13px;
+    }
+}

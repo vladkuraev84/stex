@@ -1,0 +1,134 @@
+
+.profile {
+  position: relative;
+
+  &-open {
+    
+    .ar {
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+    
+    .profile-item-list {
+      display: block;
+    }
+    
+  }
+  
+  &-item {
+    cursor: pointer;
+    position: relative;
+    padding-right: 20px;
+
+      &-list {
+        display: none;
+        position: absolute;
+        margin-top: 10px;
+        top: 100%;
+        right: 0;
+        width: 290px;
+        overflow: hidden;
+
+        z-index: 4;
+
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+
+        background-color: #ffffff;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+        
+          &--name {
+            background-color: #f9fafb;
+            padding: 1.4rem;
+          }
+
+        ul {
+          padding: 0 1.4rem 1.4rem;
+          max-height: 240px;
+          overflow-y: scroll;
+        }
+
+        p {
+          margin: 0;
+        }
+
+        li {
+          border-bottom: 1px solid #dddfe2;
+          padding: 5px 0;
+
+            &:last-child {
+              border-bottom: none;
+            }
+
+          a, p {
+            padding: 13px 15px;
+            width: 100%;
+            color: #808386;
+          }
+
+          a {
+
+            span {
+              margin-right: 13px;
+            }
+            &:hover {
+              color: $colorBody;
+
+              [class^="icon-"], [class*=" icon-"] {
+                color: $blue;
+              }
+            }
+          }
+
+          .btn {
+            margin-top: 15px;
+          }
+        }
+      }
+  }
+
+  .name {
+    font-size: 1.125rem;
+    margin-bottom: 0;
+    position: relative;
+  }
+
+  .id {
+    margin-bottom: 0;
+    font-size: 13px;
+    color: #808386;
+  }
+
+  .ar {
+    color: #808386;
+    position: absolute;
+    top: 9px;
+    right: -15px;
+    margin-left: 5px;
+    display: inline-block;
+    font-size: 10px;
+
+    -webkit-transition: .3s all;
+    -moz-transition: .3s all;
+    -ms-transition: .3s all;
+    -o-transition: .3s all;
+    transition: .3s all;
+  }
+
+}
+
+.status, .profile li, .profile li p{
+  @include flexBox(space-between, row, center, nowrap);
+}
+
+.status {
+    margin-left: 10px;
+
+    i {
+      margin-right: 5px;
+    }
+}

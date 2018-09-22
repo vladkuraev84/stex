@@ -1,0 +1,10 @@
+
+.languages {
+  margin: 0 -10px;
+  @include flexBox(flex-end, row, center, wrap);
+  width: auto;
+
+  li {
+    margin: 5px 10px;
+  }
+}

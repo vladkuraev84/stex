@@ -1,0 +1,247 @@
+
+
+<div id="personal-block" class="tab-content personal-wr">
+
+    <h5 class="title">
+        <span class="icon-avatar"></span>
+        Personal information
+    </h5>
+
+    <ul class="tabs-per">
+        <li class="per-link active-per" data-tab="per-prof"><p>Profile</p></li>
+        <li class="per-link" data-tab="per-address"><p>Address</p></li>
+    </ul>
+
+
+    <div class="main-personal">
+
+        <div id="per-log" class="per-tab active-per-tab">
+
+            <div class="form-main">
+                <form>
+                    <div class="form-main__item--group">
+                        <div class="form-main__item">
+                            <label>
+                                <span>Name</span>
+
+                                <input type="text">
+
+                            </label>
+                        </div>
+                        <div class="form-main__item">
+                            <label>
+                                <span>Last name</span>
+
+                                <input type="text">
+
+                            </label>
+                        </div>
+
+                    </div>
+                    <div class="form-main__item--group">
+                        <div class="form-main__item">
+                            <label>
+                                <span>Personal №</span>
+
+                                <input type="text">
+
+                            </label>
+
+                            <div class="checkbox checkbox-simple">
+                                <label>
+                                    <input type="checkbox" class="checkbox-input-simple">
+                                    <span class="checkbox-sq">I don’t have Personal №</span>
+                                </label>
+                            </div>
+
+                        </div>
+
+                        <div class="form-main__item">
+                            <label>
+                                <span>Date of birth</span>
+
+                                <input type="text"  id="datepicker" />
+
+                                <p class="calendar"><img src="img/calendar.svg" alt="calendar"></p>
+
+                            </label>
+                        </div>
+
+                    </div>
+                    <div class="form-main__item--group">
+                        <div class="form-main__item">
+                            <label>
+                                <span>Place of birth</span>
+
+                                <input type="text">
+
+                            </label>
+                        </div>
+                        <div class="form-main__item">
+                            <label>
+                                <span>Occupation</span>
+
+                                <input type="text">
+
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <h5 class="title-sub">Identity document</h5>
+
+                    <div class="form-main__item--group">
+
+                        <div class="form-main__item">
+
+                                <span>Document type</span>
+
+                                <div class="input__item select-block">
+
+                                    <select>
+                                        <option>Passport</option>
+                                        <option>ID auto</option>
+                                    </select>
+
+                                    <span class="icon-down-arrow"></span>
+                                </div>
+
+                        </div>
+
+                        <div class="form-main__item">
+
+                            <span>Document issuing country</span>
+
+                            <div class="input__item select-block">
+
+                                <select>
+                                    <option>England</option>
+                                    <option>France</option>
+                                    <option>Turkie</option>
+                                </select>
+
+                                <span class="icon-down-arrow"></span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-main__item">
+                            <label>
+                                <span>Document issuing date</span>
+
+                                <input type="text"  id="datepicker1" />
+
+                                <p class="calendar"><img src="img/calendar.svg" alt="calendar"></p>
+
+                            </label>
+                        </div>
+
+                    </div>
+                    <div class="form-main__item--group">
+
+                        <div class="form-main__item">
+                            <label>
+                                <span>Document №</span>
+
+                                <input type="text">
+
+                            </label>
+
+                        </div>
+
+                        <div class="form-main__item">
+                            <label>
+                                <span>Issuing Authority</span>
+
+                                <input type="text">
+
+                            </label>
+
+                        </div>
+
+                        <div class="form-main__item">
+                            <label>
+                                <span>Document expiration date</span>
+
+                                <input type="text"  id="datepicker2" />
+
+                                <p class="calendar"><img src="img/calendar.svg" alt="calendar"></p>
+
+                            </label>
+                        </div>
+
+                    </div>
+
+
+
+                    <h5 class="title-sub">Document scan</h5>
+
+
+                    <h6 class="title--sm">Tax residency information FATCA purposes</h6>
+
+                    <div class="display-flex">
+                        <p>Are you a US citizen, US green-card holder or by any other means US tax resident? </p>
+                        <div class="tooltip">
+                            <span class="icon-information"></span>
+                            <span class="tooltiptext">
+                                In order to comply with FATCA regulations, the USA is defined as the USA and its jurisdictions:<br>
+                                - Puerto Rico;<br>
+                                - US Virgin Islands;<br>
+                                - Guam;<br>
+                                - North Marin Islands;<br>
+                                - American Samoa.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="radio radio-simple">
+
+                        <div class="display-flex">
+                            <label class="open-specify">
+                                <input type="radio" name="radio-choose" class="radio-input-simple">
+                                <span class="radio-sq">Yes</span>
+                            </label>
+                            <label class="close-specify">
+                                <input type="radio" name="radio-choose" class="radio-input-simple" checked>
+                                <span class="radio-sq">No</span>
+                            </label>
+                        </div>
+
+                        <div class="form-main__item specify">
+                            <label>
+                                <span>Please specify:</span>
+
+                                <input type="text">
+
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <div class="form-main__item">
+                        <label>
+                            <input id="phone" type="tel">
+                            <span id="valid-msg" class="hide">Valid</span>
+                            <span id="error-msg" class="hide">Invalid number</span>
+
+                        </label>
+                    </div>
+
+
+                </form>
+            </div>
+
+
+        </div>
+
+        <div id="per-device" class="per-tab">
+            <h5 class="title-sub">Device</h5>
+        </div>
+
+    </div>
+
+
+
+
+</div>

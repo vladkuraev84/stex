@@ -1,0 +1,51 @@
+//1423*705
+
+.header {
+  padding: 19px 0;
+  background: $white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  flex: 0 auto;
+
+  .container {
+    @include flexBox(space-between, row, center, wrap);
+  }
+
+}
+
+.index {
+  .header {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+.logo {
+  max-width: 155px;
+  width: 100%;
+  flex: 1 0;
+
+  @include respond-to(phone) {
+    max-width: 115px;
+  }
+
+  a {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+.sign {
+
+  ul {
+    @include flexBox(space-between, row, center, nowrap);
+    width: auto;
+    margin: 0 -10px;
+  }
+
+  li {
+    margin: 0 10px;
+  }
+
+}
+
+
+

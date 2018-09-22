@@ -1,0 +1,50 @@
+
+.main {
+
+  @include flexBox(center, column, center, wrap);
+
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+
+  padding: 1.875rem;
+  margin-top: 3.125rem;
+  margin-bottom: 3.125rem;
+
+  color: #808386;
+
+  &-content {
+    flex: 1 1;
+  }
+
+  &-tab {
+    width: 100%;
+
+    &--wr {
+      @include flexBox(flex-start, row, flex-start, nowrap);
+      margin: 0 -15px;
+
+      >div {
+        margin: 15px;
+      }
+
+    }
+  }
+
+}
+
+@import "blocks/main/main-top";
+
+@import "blocks/main/sidebar";
+@import "blocks/main/buy-sell";
+@import "blocks/main/send-request";
+@import "blocks/main/support";
+@import "blocks/main/address_bitcoin";
+@import "blocks/main/account-statement";
+
+@import "blocks/main/security";
+@import "blocks/main/merchant";
+@import "blocks/main/personal";

@@ -1,0 +1,84 @@
+.footer {
+
+  width: 100%;
+  background-color: $bacFooter;
+
+  flex: 0 auto;
+
+
+
+
+  .logo {
+    flex: none;
+
+      a {
+        opacity: 1;
+      }
+  }
+
+  &-top {
+    padding: 3.125rem 0;
+
+      &--wr {
+        margin: 0 -1.875rem;
+        @include flexBox(space-between, row, flex-start, wrap);
+
+        >div {
+          margin: .5rem 1.875rem;
+        }
+      }
+
+    a {
+      font-size: 15px;
+      line-height: 1.6;
+      color: $colorBody;
+      opacity: .5;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+
+
+  &-bot {
+    background-color: $bacFooterBot;
+
+    .container, ul {
+      @include flexBox(space-between, row, center, wrap);
+    }
+
+
+    ul {
+      width: auto;
+      margin: 0 -13px;
+    }
+
+    li {
+      margin: 5px 13px;
+      max-width: 128px;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    span, a {
+      display: inline-block;
+    }
+  }
+
+}
+
+.pay-system {
+  img {
+    width: 75px;
+  }
+
+  li {
+    &:last-child {
+      width: 59px;
+    }
+  }
+}

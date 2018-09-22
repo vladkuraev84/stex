@@ -1,0 +1,139 @@
+
+$primary: #4c84eb;
+
+.btn {
+    display: inline-block;
+
+    padding: 10px 25px;
+    border-right: 0;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    text-align: center;
+    margin: 0;
+    cursor: pointer;
+    background: transparent;
+    overflow: hidden;
+    white-space: nowrap;
+
+      &:hover, &:focus, &.active {
+          color: $white;
+          background: $primary;
+          -webkit-transition: .3s;
+          -moz-transition: .3s;
+          -ms-transition: .3s;
+          -o-transition: .3s;
+          transition: .3s;
+      }
+
+}
+
+.btn-primary {
+    background: $primary;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    color: $white;
+
+        &:hover, &:focus {
+            background: #1853eb;
+        }
+}
+
+.btn-sign {
+    color: $primary;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    border: solid 1px #dddfe2;
+}
+
+.btn-black {
+    font-size: 1.125rem;
+    color: $white;
+    background: #1c2027;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    padding: 15px 25px;
+
+        &:hover {
+            background: #30363f;
+        }
+}
+
+.btn-gray {
+    font-size: 15px;
+    color: #808386;
+    line-height: 1.6;
+    background: #e3e5e7;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    padding: 3px 20px;
+
+        &:hover {
+            background: #30363f;
+        }
+}
+
+.btn-cripto {
+    background: $white;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    color: $colorBody;
+    font-size: 1.125rem;
+    line-height: 1;
+    padding: 20px 25px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    min-width: 13.75rem;
+
+    @include flexBox(flex-start, row, center, nowrap);
+
+    [class^="icon-"], [class*=" icon-"] {
+        color: #aeb0b4;
+        font-size: 2.25rem;
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    &:hover, &:focus, &.active {
+        background: $primary;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+
+        [class^="icon-"], [class*=" icon-"] {
+            color: $white;
+            
+                .path2:before {
+                    color: #4c84eb;
+                }
+        }
+    }
+}
+
+.btn-blueHover {
+    -webkit-transition: 0s all;
+    -moz-transition: 0s all;
+    -ms-transition: 0s all;
+    -o-transition: 0s all;
+    transition: 0s all;
+    &:hover {
+
+        color: transparent;
+        background: transparent;
+
+
+        span {
+            -webkit-transition: 0.2s all;
+            -moz-transition: 0.2s all;
+            -ms-transition: 0.2s all;
+            -o-transition: 0.2s all;
+            transition: 0.2s all;
+
+            color: $primary;
+        }
+    }
+}
+
+
