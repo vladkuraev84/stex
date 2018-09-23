@@ -425,3 +425,133 @@ input[type="date"] {
     background: linear-gradient(to top, #f3f4f5, #f9fafb);
   }
 }
+
+.communicate {
+  max-width: 33rem;
+
+  &__item {
+    flex: 1 1;
+  }
+
+  &__links {
+    width: 100%;
+    @include flexBox(flex-start, row, center, nowrap);
+    
+      a {
+        display: inline-block;
+        margin-right: 20px;
+        margin-top: 5px;
+        color: #4c84eb;
+        font-size: 14px;
+        text-decoration: underline;
+        
+          &:hover {
+            color: #32159c;
+          }
+      }
+  }
+
+
+  .intl-tel-input {
+    @include flexBox(flex-start, row, center, nowrap);
+    width: 100%;
+
+
+
+    .selected-flag {
+      color: #000;
+      width: 6.875rem;
+      border-right: 1px solid #dddfe2;
+      @include flexBox(space-between, row, center, nowrap);
+    }
+
+    input[type=tel] {
+      padding-left: 7.875rem;
+      text-align: left;
+      position: static;
+      height: 40px;
+    }
+
+    .country-list {
+      min-width: 220px;
+    }
+
+    .country {
+      @include flexBox(flex-start, row, center, wrap);
+    }
+
+
+  }
+
+  .flag-box {
+    order: 1;
+    flex: none;
+  }
+
+  .country-name {
+    order: 3;
+  }
+
+  .dial-code {
+    order: 2;
+    max-width: 70%;
+    margin-bottom: 0;
+    margin-left: 10px;
+  }
+
+  .selected-dial-code {
+    margin-left: 30px;
+  }
+
+  .iti-arrow {
+    font-size: 10px;
+    margin-right: 5px;
+
+    &:before {
+      font-family: icomoon;
+      font-weight: 400;
+      content: "\e90c";
+      color: #858688;
+    }
+
+  }
+
+  input {
+    &::-webkit-input-placeholder {
+      color: black;
+      font-size: 1rem;
+    }
+    &::-moz-placeholder {
+      color: black;
+      font-size: 1rem;
+    }
+    &:-ms-input-placeholder {
+      color: black;
+      font-size: 1rem;
+    }
+    &:-moz-placeholder {
+      color: black;
+      font-size: 1rem;
+    }
+  }
+
+}
+
+#valid-msg, #error-msg, #valid-msg-telegram, #error-msg-telegram {
+
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  top: -15px;
+  font-size: 14px;
+
+}
+
+#error-msg, #valid-msg-telegram {
+  color: red;
+}
+
+#valid-msg, #error-msg-telegram {
+  color: #green;
+}

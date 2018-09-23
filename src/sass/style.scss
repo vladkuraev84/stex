@@ -11,7 +11,7 @@
     outline:none;
 }
 
-//@import "blocks/ui";
+@import "blocks/ui";
 @import "blocks/course-header";
 @import "blocks/header";
 @import "blocks/profile";
@@ -22,6 +22,7 @@
 @import "blocks/table";
 @import "blocks/popup";
 @import "blocks/main";
+@import "blocks/document";
 @import "blocks/footer";
 @import "blocks/languages";
 @import "blocks/progress";
@@ -29,4 +30,4 @@
 @import "blocks/animation";
 @import "blocks/icomoon";
 @import "blocks/tooltip";
-//@import "blocks/intlTelInput";
+@import "blocks/intlTelInput";

@@ -136,4 +136,20 @@ $primary: #4c84eb;
     }
 }
 
+.btn-confirm {
+    background: #aeb0b4;
+    font-size: 1rem;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    margin: 5px 10px;
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 20px;
+
+        &:hover {
+            background: #8bb820;
+        }
+}
+
 

@@ -1,0 +1,1790 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>stex</title>
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+</head>
+
+
+<div class="popup popup-in">
+
+    <div class="popup-close-block"></div>
+
+    <div class="popup-block animated fadeInUp">
+
+        <h4 class="title-sub">Sign in <span class="close-popup"><img src="img/close.svg" alt="close"></span></h4>
+
+        <div class="popup-block-form">
+            <!--<form>-->
+
+                <div>
+                    <label>
+                        <span>Enter your e-mail adress</span>
+
+                        <input type="email" placeholder="email">
+                    </label>
+                </div>
+
+                <div>
+                    <label>
+                        <span>Enter password</span>
+
+                        <input type="password" placeholder="******">
+                    </label>
+                </div>
+
+                <div class="form-bot">
+                    <button class="btn btn-primary goToProfile">Sign in</button>
+
+                    <p>
+                        <a href="/">Forgot your password?</a>
+                        or
+                        <a href="/">Sign up</a>
+                    </p>
+                </div>
+
+            <!--</form>-->
+        </div>
+    </div>
+
+</div>
+
+<div class="popup popup-up">
+
+    <div class="popup-close-block"></div>
+
+    <div class="popup-block animated fadeInUp">
+
+        <h4 class="title-sub">Sign up <span class="close-popup"><img src="img/close.svg" alt="close"></span></h4>
+
+        <div class="popup-block-form">
+            <form>
+
+                <div>
+                    <label>
+                        <span>Your name</span>
+
+                        <input type="text" placeholder="name">
+                    </label>
+                </div>
+
+                <div>
+                    <label>
+                        <span>Your Last name</span>
+
+                        <input type="text" placeholder="last name">
+                    </label>
+                </div>
+
+                <div>
+                    <label>
+                        <span>Your mobile</span>
+
+                        <input type="tel" placeholder="your phone">
+                    </label>
+                </div>
+
+                <div>
+                    <label>
+                        <span>Your password</span>
+
+                        <input type="password" placeholder="******">
+                    </label>
+                </div>
+
+                <div>
+                    <label>
+                        <span>Re-enter password</span>
+
+                        <input type="password" placeholder="******">
+                    </label>
+                </div>
+
+                <div class="form-bot">
+                    <button class="btn btn-primary">Sign up</button>
+
+                    <p>
+                        By registering I accept
+                        <a href="/">User agreement</a>
+                        and
+                        <a href="/">Private policy</a>
+                    </p>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<div class="popup popup-reject">
+
+    <div class="popup-close-block"></div>
+
+    <div class="popup-block animated fadeInUp">
+
+        <h4 class="title-sub">Rejection reason <span class="close-popup"><img src="img/close.svg" alt="close"></span></h4>
+
+        <div class="popup-block-form">
+            <p>There are some problems with your documents. :(</p>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="popup qr text-center">
+
+    <div class="popup-close-block"></div>
+
+    <div class="popup-block animated fadeInUp">
+
+        <span class="close-popup"><img src="img/close.svg" alt="close"></span>
+
+        <div class="qr--code">
+            <img src="img/qr.png" alt="qr">
+        </div>
+
+        <p class="title">askhfkjdhfsdjhgsdhglajdhfs</p>
+
+    </div>
+
+</div>
+
+<div class="wrapper">
+
+    
+    
+    <div class="course-header">
+        <div class="container">
+            <ul class="course-header--list">
+                <li><span>BCH/EUR</span>&nbsp;<span>1,349.52</span></li>
+                <li><span>BTC/EUR</span>&nbsp;<span>16,429.15</span></li>
+                <li><span>LTC/EUR</span>&nbsp;<span>142.52</span></li>
+                <li><span>DASH/EUR</span>&nbsp;<span>357.92</span></li>
+                <li><span>XRP/EUR</span>&nbsp;<span>0.8332</span></li>
+                <li><span>BCH/EUR</span>&nbsp;<span>530.06</span></li>
+                <li><span>BTC/USD</span>&nbsp;<span>6,452.93</span></li>
+                <li><span>ETH/USD</span>&nbsp;<span>257.09</span></li>
+            </ul>
+        </div>
+    </div>
+    
+    <header class="header">
+    
+        <div class="container">
+    
+            <div class="logo"><a href="/"><img src="img/logo.png" alt="logo"></a></div>
+    
+            <div class="sign">
+                <ul>
+                    <li>
+                        <button class="btn btn-sign sigh-in">Sign in</button>
+                    </li>
+                    <li>
+                        <button class="btn btn-sign sigh-up">Sign up</button>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="profile" style="display: none;">
+                <div class="profile-item">
+                    <p class="name"><b>Maxim Griffin</b><span class="icon-down-arrow ar"></span></p>
+                    <p class="id">235246346</p>
+                </div>
+    
+                <div class="profile-item-list animated fadeInDown">
+                    <div class="profile-item-list--name">
+                        <p class="name"><b>Maxim Griffin</b></p>
+                        <p class="id">235246346</p>
+                    </div>
+                    <ul>
+                        <li><p>Account status: <span class="green status"><i class="icon-check-mark"></i>Verified</span></p></li>
+                        <li><a href="" class="btn-personal"><span class="icon-avatar"></span> Personal</a></li>
+                        <li><a href="" class="btn-security"><span class="icon-shield-2"></span> Security</a></li>
+                        <li><a href="" class="btn-merchant"><span class="icon-list-1"></span> Merchant</a></li>
+                        <li><button class="btn btn-gray exit-profile">Log out</button></li>
+                    </ul>
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </header>
+
+    <div class="main-wr">
+
+        <div class="container">
+
+            
+            <div class="cripto-list">
+                <ul>
+                    <li>
+                        <button class="btn btn-cripto active"><span class="icon-if_Bitcoin_272914"><span class="path1"></span><span class="path2"></span></span> Bitcoin</button>
+                    </li>
+                    <li>
+                        <button class="btn btn-cripto"><span class="icon-if_Bitcoin_272914"><span class="path1"></span><span class="path2"></span></span> Bitcoin Cash</button>
+                    </li>
+                    <li>
+                        <button class="btn btn-cripto"><span class="icon-if_ETH-alt_1175229"></span> Ethereum</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="main">
+
+                
+                <div class="main-top">
+                
+                    <div class="main-top-item">
+                        <ul>
+                            <li><span>btc 0.00000000</span></li>
+                            <li><span>bch 0.00000000</span></li>
+                            <li><span>eth 0.00000000</span></li>
+                        </ul>
+                
+                        <div class="main-top-item-select">
+                
+                            <p>Total balance: <span>0.05</span></p>
+                
+                            <div class="select">
+                                <select>
+                                    <option>USD</option>
+                                    <option>EUR</option>
+                                    <option>GBR</option>
+                                </select>
+                
+                                <span class="icon-down-arrow"></span>
+                            </div>
+                
+                            <a href="/"><span class="icon-refresh"></span></a>
+                
+                        </div>
+                    </div>
+                
+                </div>
+
+                <div class="main-tab">
+
+                    <div class="main-tab--wr">
+
+                        
+                        <div class="sidebar">
+                        
+                            <p><a href="/"><span class="icon-go-back-arrow"></span></a></p>
+                        
+                            <ul class="tabs">
+                                <li class="tab-link current" data-tab="buy-sell"><p><span class="icon-cart"></span> Buy / Sell</p></li>
+                                <li class="tab-link" data-tab="send-request"><p><span class="icon-send-mail"></span> Send / Request</p></li>
+                                <li class="tab-link" data-tab="support"><p><span class="icon-settings"></span> Support</p></li>
+                                <li class="tab-link" data-tab="address-bitcoin"><p><span class="icon-if_Bitcoin_272914"><span class="path1"></span><span class="path2"></span></span> The address of my bitcoin</p></li>
+                                <li class="tab-link" data-tab="account-statement"><p><span class="icon-document"></span> Account Statement</p></li>
+                            </ul>
+                        
+                        </div>
+
+                        <div class="main-content">
+                            
+                            <div id="buy-sell" class="tab-content current tab-content-buy-sell">
+                            
+                            
+                                <div class="tabs__buy-sell--wr">
+                            
+                                    <ul class="tabs__buy-sell">
+                                        <li class="btn active" data-name="buy"><p><strong>Buy</strong> 17,381.17 $</p></li>
+                                        <li class="btn" data-name="sell"><p><strong>Sell</strong> 17,381.17 $</p></li>
+                                    </ul>
+                            
+                                </div>
+                            
+                            
+                                <div class="tabs__content-buy-sell active">
+                            
+                                    <div class="form-main">
+                            
+                                        <div class="form-main__item--cap">
+                                            <p><span>Available balance:</span> BTC 0.00000</p>
+                                        </div>
+                            
+                                        <form>
+                            
+                                            <div class="form-main__item">
+                                                <label>
+                                                    <span>You will receive</span>
+                            
+                            
+                                                    <div class="input__item">
+                                                        <input type="text">
+                                                        <span class="crip">BTC</span>
+                                                    </div>
+                            
+                                                </label>
+                                                <span class="error">Enter the number</span>
+                                            </div>
+                            
+                                            <div class="form-main__item">
+                                                <label>
+                            
+                                                    <span>You will pay</span>
+                            
+                                                    <div class="input__item">
+                                                        <input type="text">
+                                                        <span class="crip">
+                                                            <select>
+                                                                <option>USD</option>
+                                                                <option>EUR</option>
+                                                                <option>GBP</option>
+                                                            </select>
+                            
+                                                            <span class="icon-down-arrow"></span>
+                                                        </span>
+                                                    </div>
+                            
+                                                </label>
+                                            </div>
+                            
+                                            <div class="form-main__item">
+                                                <span>How do you want to pay?</span>
+                                                <div class="form-main__item--group">
+                            
+                                                    <input type="radio">
+                            
+                                                    <div class="input__item">
+                            
+                                                        <span class="cur">USD</span>
+                            
+                                                        <input type="text" placeholder="0.00">
+                                                        <span class="crip">
+                                                            <select>
+                                                                <option>Visa</option>
+                                                                <option>M.Card</option>
+                                                                <option>P.Pal</option>
+                                                            </select>
+                            
+                                                            <span class="icon-down-arrow"></span>
+                                                        </span>
+                                                    </div>
+                            
+                                                </div>
+                                            </div>
+                            
+                                            <div class="form-bot">
+                                                <button class="btn btn-primary" type="submit">Buy</button>
+                                            </div>
+                            
+                                        </form>
+                            
+                                       <!-- <form>
+                            
+                                            <div class="form-main__item">
+                                                <label>
+                                                    <span>Sender</span>
+                            
+                                                    <input type="text" placeholder="Enter request receiver’s email or Bitcoin address">
+                                                </label>
+                                            </div>
+                            
+                                            <div class="form-main__item">
+                                                <label>
+                                                    <span>Amount</span>
+                            
+                                                    <div class="input__item">
+                                                        <input type="text">
+                                                        <span class="crip">BTC</span>
+                                                    </div>
+                            
+                                                </label>
+                                            </div>
+                            
+                                            <div class="form-bot">
+                                                <button class="btn btn-primary" type="submit">Bitcoin request</button>
+                                            </div>
+                            
+                                        </form>-->
+                            
+                                    </div>
+                            
+                                </div>
+                            
+                                <div class="tabs__content-buy-sell">
+                            
+                                    <div class="form-main">
+                            
+                                        <div class="form-main__item--cap">
+                                            <p><span>Available balance:</span> BTC 0.00000</p>
+                                        </div>
+                            
+                                        <form>
+                            
+                                            <div class="form-main__item">
+                                                <label>
+                            
+                                                    <span>Enter amount you want to sell</span>
+                            
+                                                    <div class="input__item">
+                                                        <input type="text">
+                                                        <span class="crip">BTC</span>
+                                                    </div>
+                            
+                                                </label>
+                                            </div>
+                            
+                                            <div class="form-main__item">
+                                                <label>
+                                                    <span>You will receive</span>
+                            
+                                                    <div class="input__item">
+                                                        <input type="text">
+                                                        <span class="crip">
+                                                            <select>
+                                                                <option>USD</option>
+                                                                <option>EUR</option>
+                                                                <option>GBP</option>
+                                                            </select>
+                            
+                                                            <span class="icon-down-arrow"></span>
+                                                        </span>
+                                                    </div>
+                            
+                                                </label>
+                                            </div>
+                            
+                                            <div class="form-main__item">
+                                                <span>Were do you want to receive money?</span>
+                                                <div class="form-main__item--group">
+                            
+                                                    <input type="radio">
+                            
+                                                    <div class="input__item">
+                            
+                                                        <span class="cur">USD</span>
+                            
+                                                        <input type="text" placeholder="0.00">
+                                                        <span class="crip">
+                                                            <select>
+                                                                <option>Visa</option>
+                                                                <option>M.Card</option>
+                                                                <option>P.Pal</option>
+                                                            </select>
+                            
+                                                            <span class="icon-down-arrow"></span>
+                                                        </span>
+                                                    </div>
+                            
+                                                </div>
+                                            </div>
+                            
+                                            <div class="form-bot">
+                                                <button class="btn btn-primary" type="submit">Sell</button>
+                                            </div>
+                            
+                                        </form>
+                            
+                                    </div>
+                            
+                                </div>
+                            
+                            </div>
+                            
+                            <div id="send-request" class="tab-content tabs">
+                            
+                            
+                                <div class="tabs__caption--wr">
+                            
+                                    <ul class="tabs__caption">
+                                        <li class="btn active"><p><span class="icon-send-mail"></span> Bitcoin send</p></li>
+                                        <li class="btn btc-request"><p><span class="icon-send-mail"></span> Bitcoin request</p></li>
+                                    </ul>
+                            
+                                    <p><span>Available balance:</span> BTC 0.00000</p>
+                            
+                                </div>
+                            
+                            
+                                <div class="tabs__content active">
+                            
+                                    <div class="form-main">
+                            
+                                        <form>
+                            
+                                            <div class="form-main__item">
+                                                <label>
+                                                    <span>Receiver's address</span>
+                            
+                                                    <input type="text" placeholder="Address">
+                                                </label>
+                                            </div>
+                            
+                                            <div class="form-main__item">
+                                                <label>
+                                                    <span>Amount</span>
+                            
+                                                   <!-- <div class="input__item">
+                                                        <input type="text">
+                                                        <span class="crip">BTC</span>
+                                                    </div>-->
+                            
+                                                    <div class="input__item">
+                                                        <input type="text">
+                                                        <span class="crip">
+                                                            <select>
+                                                                <option>BTC</option>
+                                                                <option>USD</option>
+                                                                <option>EUR</option>
+                                                                <option>GBP</option>
+                                                            </select>
+                            
+                                                            <span class="icon-down-arrow"></span>
+                                                        </span>
+                                                    </div>
+                            
+                                                </label>
+                                            </div>
+                            
+                                            <div class="form-main__item form-main__item--text">
+                                                <label>
+                                                    <span>Description</span>
+                            
+                                                    <textarea cols="30" rows="10"></textarea>
+                                                </label>
+                                            </div>
+                            
+                                            <div class="form-main__item--cap">
+                                                <p><span>Commission:</span> 0.00000</p>
+                                                <p><span>Total:</span> 0.00000</p>
+                                            </div>
+                            
+                                            <div class="form-bot">
+                                                <button class="btn btn-primary" type="submit">Bitcoin send</button>
+                                            </div>
+                            
+                                        </form>
+                            
+                                    </div>
+                            
+                                </div>
+                            
+                                <div class="tabs__content">
+                            
+                                    <div class="form-main">
+                            
+                                        <form>
+                            
+                                            <div class="form-main__item">
+                                                <label>
+                                                    <span>Sender</span>
+                            
+                                                    <input type="text" placeholder="Enter request receiver’s email or Bitcoin address">
+                                                </label>
+                                            </div>
+                            
+                                            <div class="form-main__item">
+                                                <label>
+                                                    <span>Amount</span>
+                            
+                                                    <!-- <div class="input__item">
+                                                         <input type="text">
+                                                         <span class="crip">BTC</span>
+                                                     </div>-->
+                            
+                                                    <div class="input__item">
+                                                        <input type="text">
+                                                        <span class="crip">
+                                                            <select>
+                                                                <option>BTC</option>
+                                                                <option>USD</option>
+                                                                <option>EUR</option>
+                                                                <option>GBP</option>
+                                                            </select>
+                            
+                                                            <span class="icon-down-arrow"></span>
+                                                        </span>
+                                                    </div>
+                            
+                                                </label>
+                                            </div>
+                            
+                                            <div class="form-main__item form-main__item--text">
+                                                <label>
+                                                    <span>Description</span>
+                            
+                                                    <textarea cols="30" rows="10"></textarea>
+                                                </label>
+                                            </div>
+                            
+                                            <div class="form-bot">
+                                                <button class="btn btn-primary" type="submit">Bitcoin request</button>
+                                            </div>
+                            
+                                        </form>
+                            
+                                    </div>
+                            
+                                </div>
+                            
+                            </div>
+                            
+                            <div id="support" class="tab-content support">
+                            
+                                <div class="form-main">
+                            
+                                        <form>
+                            
+                                            <div class="form-main__item">
+                                                <label>
+                                                    <span>Your email</span>
+                            
+                                                    <input type="text" placeholder="Your email">
+                                                </label>
+                                            </div>
+                            
+                                            <div class="form-main__item">
+                                                <label>
+                                                    <span>Subject</span>
+                            
+                                                    <input type="text">
+                                                </label>
+                                            </div>
+                            
+                                            <div class="form-main__item form-main__item--text">
+                                                <label>
+                                                    <span>Type message here</span>
+                            
+                                                    <textarea cols="30" rows="10"></textarea>
+                                                </label>
+                                            </div>
+                            
+                                            <div class="form-main__item">
+                                                <label>
+                                                    <span>Attach file</span>
+                            
+                                                    <div class="input__item file">
+                                                        <input type="file">
+                                                        <span class="select-file">Select file</span>
+                                                    </div>
+                            
+                                                </label>
+                            
+                                                <p class="max-size">Maximum file size is 3 MB</p>
+                                            </div>
+                            
+                                            <div class="form-bot">
+                                                <button class="btn btn-primary" type="submit">Send message</button>
+                                            </div>
+                            
+                                        </form>
+                            
+                                    </div>
+                            
+                            </div>
+                            
+                            <div id="address-bitcoin" class="tab-content address-bitcoin">
+                            
+                                <h5 class="title">
+                                    <span class="icon-if_Bitcoin_272914"><span class="path1"></span><span class="path2"></span></span>
+                                    Bitcoin
+                                </h5>
+                            
+                                <div class="color-info">
+                                    <p>Attantion! Dear Customers, plase take into consideration, when sending Bitcoin you have to
+                                        indicate receivers Bitcoin address and do not mix it with Bitcoin Cash address.</p>
+                                </div>
+                            
+                                <div class="form-main">
+                            
+                                    <!--<form>-->
+                            
+                                        <div class="form-main__item">
+                                            <label>
+                                                <span>The address of my bitcoin</span>
+                            
+                            
+                                                <div class="input__item">
+                                                    <input type="text">
+                            
+                                                </div>
+                            
+                                            </label>
+                                            <span class="icon-copy-file"></span>
+                                        </div>
+                            
+                                        <div class="form-bot">
+                                            <button class="btn btn-primary qr-btn" type="submit">QR code</button>
+                                        </div>
+                            
+                                    <!--</form>-->
+                            
+                                </div>
+                            
+                            </div>
+                            
+                            <div id="account-statement" class="tab-content account-statement">
+                            
+                                <div class="account-statement--top">
+                            
+                                    <div class="form-main">
+                            
+                                        <form>
+                            
+                                            <div class="form-main__item">
+                            
+                                                <div class="input__item">
+                                                    <input type="text" placeholder="22.08.2018">
+                                                </div>
+                            
+                                            </div>
+                            
+                                            <div class="form-main__item">
+                            
+                                                <div class="input__item">
+                                                    <input type="text" placeholder="22.08.2018">
+                                                </div>
+                            
+                                            </div>
+                            
+                                            <div class="form-bot">
+                                                <button class="btn btn-primary" type="submit">Show transactions</button>
+                                            </div>
+                            
+                                        </form>
+                            
+                                    </div>
+                            
+                            
+                                    <div>
+                                        <button class="btn btn-gray">Export to PDF</button>
+                                    </div>
+                            
+                                </div>
+                            
+                                <div class="table table__account-statement" id="table__account-statement">
+                                    <table>
+                                        <thead>
+                                        <tr>
+                                            <th><span>Transaction</span></th>
+                                            <th><span>date</span></th>
+                                            <th><span>BTC amount</span></th>
+                                            <th><span>description</span></th>
+                                            <th><span>status</span></th>
+                                        </tr>
+                                        </thead>
+                            
+                                        <tbody>
+                                        <tr>
+                                            <td>You sell</td>
+                                            <td>09.08.2018</td>
+                                            <td>1.000000000</td>
+                                            <td>(1 BTC = 6223Ю1423432 USD), Currency exchange</td>
+                                            <td><span class="color green">Completed</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>You sell</td>
+                                            <td>09.08.2018</td>
+                                            <td>1.000000000</td>
+                                            <td>eMoney - Bitcoin</td>
+                                            <td><span class="color green">Completed</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>You sell</td>
+                                            <td>09.08.2018</td>
+                                            <td>1.000000000</td>
+                                            <td>(1 BTC = 6223Ю1423432 USD), Currency exchange</td>
+                                            <td><span class="color green">Completed</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>You sell</td>
+                                            <td>09.08.2018</td>
+                                            <td>1.000000000</td>
+                                            <td>eMoney - Bitcoin</td>
+                                            <td><span class="color green">Completed</span></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            
+                            </div>
+
+                            
+                            
+                            <div id="security-block" class="tab-content security-wr">
+                            
+                                <h5 class="title">
+                                    <span class="icon-shield-2"></span>
+                                    Security
+                                </h5>
+                            
+                                <ul class="tabs-sec">
+                                    <li class="sec-link active-sec" data-tab="sec-log"><p>Logs</p></li>
+                                    <li class="sec-link" data-tab="sec-device"><p>Device</p></li>
+                                    <li class="sec-link" data-tab="sec-pas"><p>Password reset</p></li>
+                                    <li class="sec-link" data-tab="sec-verif"><p>2-step verification</p></li>
+                                </ul>
+                            
+                            
+                                <div class="main-security">
+                            
+                                    <div id="sec-log" class="sec-tab active-sec-tab">
+                                        <h5 class="title-sub">Logs</h5>
+                            
+                                        <ul class="logos-list">
+                            
+                                            <li>
+                                                <div class="logos-list__item">
+                                                    <p class="logos-list__item-top">Login <span>16:03</span></p>
+                                                    <div class="logos-list__item-bot">
+                                                        <p>Republic of Georgia</p>
+                                                        <p>ip: 46.49.38.118</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                            
+                                            <li>
+                                                <div class="logos-list__item">
+                                                    <p class="logos-list__item-top">Login <span>2018-08-10 12:15</span></p>
+                                                    <div class="logos-list__item-bot">
+                                                        <p>Republic of Georgia</p>
+                                                        <p>ip: 46.49.38.118</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                            
+                                            <li>
+                                                <div class="logos-list__item">
+                                                    <p class="logos-list__item-top">Login <span>16:03</span></p>
+                                                    <div class="logos-list__item-bot">
+                                                        <p>Republic of Georgia</p>
+                                                        <p>ip: 46.49.38.118</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                            
+                                            <li>
+                                                <div class="logos-list__item">
+                                                    <p class="logos-list__item-top">Login <span>2018-08-10 12:15</span></p>
+                                                    <div class="logos-list__item-bot">
+                                                        <p>Republic of Georgia</p>
+                                                        <p>ip: 46.49.38.118</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                            
+                                            <li>
+                                                <div class="logos-list__item">
+                                                    <p class="logos-list__item-top">Login <span>16:03</span></p>
+                                                    <div class="logos-list__item-bot">
+                                                        <p>Republic of Georgia</p>
+                                                        <p>ip: 46.49.38.118</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                            
+                                            <li>
+                                                <div class="logos-list__item">
+                                                    <p class="logos-list__item-top">Login <span>2018-08-10 12:15</span></p>
+                                                    <div class="logos-list__item-bot">
+                                                        <p>Republic of Georgia</p>
+                                                        <p>ip: 46.49.38.118</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                            
+                                        </ul>
+                                    </div>
+                            
+                                    <div id="sec-device" class="sec-tab">
+                                        <h5 class="title-sub">Device</h5>
+                            
+                                        <ul class="device-list">
+                                            <li>
+                                                <div class="device-list__item">
+                                                    <p class="device-list__item--img"><img src="img/device.png" alt="device"></p>
+                                                    <p class="device-list__item--info">
+                                                        Assumed OS
+                                                        <span>Windows</span>
+                                                    </p>
+                                                    <p class="device-list__item--info">
+                                                        IP Address
+                                                        <span>91.233.34.34</span>
+                                                    </p>
+                                                    <p class="device-list__item--info">
+                                                        Last use
+                                                        <span>2018-04-12 22:52:45</span>
+                                                    </p>
+                                                    <p class="device-list__item--info">
+                                                        Browser
+                                                        <span>Chrome</span>
+                                                    </p>
+                            
+                                                    <div class="btn btn-gray">Forget device</div>
+                            
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="device-list__item">
+                                                    <p class="device-list__item--img"><img src="img/device.png" alt="device"></p>
+                                                    <p class="device-list__item--info">
+                                                        Assumed OS
+                                                        <span>Windows</span>
+                                                    </p>
+                                                    <p class="device-list__item--info">
+                                                        IP Address
+                                                        <span>91.233.34.34</span>
+                                                    </p>
+                                                    <p class="device-list__item--info">
+                                                        Last use
+                                                        <span>2018-04-12 22:52:45</span>
+                                                    </p>
+                                                    <p class="device-list__item--info">
+                                                        Browser
+                                                        <span>Chrome</span>
+                                                    </p>
+                            
+                                                    <div class="btn btn-gray">Forget device</div>
+                            
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="device-list__item">
+                                                    <p class="device-list__item--img"><img src="img/device.png" alt="device"></p>
+                                                    <p class="device-list__item--info">
+                                                        Assumed OS
+                                                        <span>Windows</span>
+                                                    </p>
+                                                    <p class="device-list__item--info">
+                                                        IP Address
+                                                        <span>91.233.34.34</span>
+                                                    </p>
+                                                    <p class="device-list__item--info">
+                                                        Last use
+                                                        <span>2018-04-12 22:52:45</span>
+                                                    </p>
+                                                    <p class="device-list__item--info">
+                                                        Browser
+                                                        <span>Chrome</span>
+                                                    </p>
+                            
+                                                    <div class="btn btn-gray">Forget device</div>
+                            
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="device-list__item">
+                                                    <p class="device-list__item--img"><img src="img/device.png" alt="device"></p>
+                                                    <p class="device-list__item--info">
+                                                        Assumed OS
+                                                        <span>Windows</span>
+                                                    </p>
+                                                    <p class="device-list__item--info">
+                                                        IP Address
+                                                        <span>91.233.34.34</span>
+                                                    </p>
+                                                    <p class="device-list__item--info">
+                                                        Last use
+                                                        <span>2018-04-12 22:52:45</span>
+                                                    </p>
+                                                    <p class="device-list__item--info">
+                                                        Browser
+                                                        <span>Chrome</span>
+                                                    </p>
+                            
+                                                    <div class="btn btn-gray">Forget device</div>
+                            
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="device-list__item">
+                                                    <p class="device-list__item--img"><img src="img/device.png" alt="device"></p>
+                                                    <p class="device-list__item--info">
+                                                        Assumed OS
+                                                        <span>Windows</span>
+                                                    </p>
+                                                    <p class="device-list__item--info">
+                                                        IP Address
+                                                        <span>91.233.34.34</span>
+                                                    </p>
+                                                    <p class="device-list__item--info">
+                                                        Last use
+                                                        <span>2018-04-12 22:52:45</span>
+                                                    </p>
+                                                    <p class="device-list__item--info">
+                                                        Browser
+                                                        <span>Chrome</span>
+                                                    </p>
+                            
+                                                    <div class="btn btn-gray">Forget device</div>
+                            
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="device-list__item">
+                                                    <p class="device-list__item--img"><img src="img/device.png" alt="device"></p>
+                                                    <p class="device-list__item--info">
+                                                        Assumed OS
+                                                        <span>Windows</span>
+                                                    </p>
+                                                    <p class="device-list__item--info">
+                                                        IP Address
+                                                        <span>91.233.34.34</span>
+                                                    </p>
+                                                    <p class="device-list__item--info">
+                                                        Last use
+                                                        <span>2018-04-12 22:52:45</span>
+                                                    </p>
+                                                    <p class="device-list__item--info">
+                                                        Browser
+                                                        <span>Chrome</span>
+                                                    </p>
+                            
+                                                    <div class="btn btn-gray">Forget device</div>
+                            
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                            
+                                    <div id="sec-pas" class="sec-tab sec-password">
+                            
+                                        <div class="form-main">
+                            
+                                            <form>
+                            
+                                                <div class="form-main__item">
+                                                    <label>
+                                                        <span>Current password</span>
+                            
+                                                        <input type="text">
+                            
+                                                    </label>
+                                                </div>
+                            
+                                                <div class="form-main__item">
+                                                    <label>
+                                                        <span>New password</span>
+                            
+                                                        <input type="password">
+                            
+                                                    </label>
+                                                </div>
+                            
+                                                <div class="progress-block">
+                            
+                                                    <div class="progress">
+                                                        <progress max="100" value="0" id="progress_1"></progress>
+                                                        <!--<div class="progress-value"></div>-->
+                                                        <div class="progress-bg"><div class="progress-bar"></div></div>
+                                                    </div>
+                            
+                                                    <div class="progress">
+                                                        <progress max="100" value="0" id="progress_2"></progress>
+                                                        <!--<div class="progress-value"></div>-->
+                                                        <div class="progress-bg"><div class="progress-bar progress-bar-sec"></div></div>
+                                                    </div>
+                            
+                                                    <div class="progress">
+                                                        <progress max="100" value="0" id="progress_3"></progress>
+                                                        <!--<div class="progress-value"></div>-->
+                                                        <div class="progress-bg"><div class="progress-bar progress-bar-th"></div></div>
+                                                    </div>
+                            
+                            
+                                                </div>
+                                                
+                                                <div class="form-main__item">
+                                                    <a href="/">Password strength</a>
+                                                </div>
+                            
+                                                <div class="form-main__item">
+                                                    <label>
+                                                        <span>New password confirmation</span>
+                            
+                                                        <input type="password">
+                            
+                                                    </label>
+                                                </div>
+                            
+                                                <div class="form-bot">
+                                                    <button class="btn btn-primary" type="submit">Change password</button>
+                                                </div>
+                            
+                                            </form>
+                                        </div>
+                            
+                                    </div>
+                            
+                                    <div id="sec-verif" class="sec-tab sec-verification">
+                            
+                                        <h5 class="title-sub">Two-factor authentication</h5>
+                            
+                                        <div class="form-main">
+                            
+                                            <form>
+                            
+                                                <div class="form-main__item">
+                                                    <label>
+                            
+                                                        <input type="checkbox">
+                            
+                                                        <span>Two-factor authenfication (2FA) is an additional layer of protection beyond your password.</span>
+                            
+                                                    </label>
+                            
+                                                    <div class="tooltip">
+                                                        <span class="icon-information"></span>
+                                                        <span class="tooltiptext">Tooltip text</span>
+                                                    </div>
+                            
+                            
+                                                </div>
+                            
+                                                <div class="form-bot">
+                                                    <button class="btn btn-primary" type="submit">Save</button>
+                                                </div>
+                            
+                                            </form>
+                                        </div>
+                            
+                                    </div>
+                            
+                                </div>
+                            
+                            
+                            
+                            
+                            </div>
+                            
+                            
+                            <div id="merchant-block" class="tab-content merchant-wr">
+                            
+                                <h5 class="title">
+                                    <span class="icon-list-1"></span>
+                                    Merchant
+                                </h5>
+                            
+                                <div class="main-merchant">
+                            
+                                    <div class="table table-merchant">
+                            
+                                        <table>
+                            
+                                            <thead>
+                                                <tr>
+                                                    <th><span>online store</span></th>
+                                                    <th><span>id</span></th>
+                                                    <th><span>domain</span></th>
+                                                    <th><span>moderation</span></th>
+                                                </tr>
+                                            </thead>
+                            
+                                            <tbody>
+                            
+                                                <tr>
+                                                    <td>
+                                                        Online store
+                                                        <a href="">shop name 1</a>
+                                                    </td>
+                                                    <td>so12341242134</td>
+                                                    <td></td>
+                                                    <td>
+                            
+                                                        <div class="display-flex">
+                            
+                                                            <button class="btn btn-blueHover"><span class="icon-settings-work-tool"></span></button>
+                                                            <p class="dots-block">
+                                                                <i></i>
+                                                                <i></i>
+                                                                <i></i>
+                                                            </p>
+                            
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                            
+                                            </tbody>
+                                        </table>
+                                    </div>
+                            
+                                    <div class="merchant-add">
+                                        <button class="btn btn-primary">Add store</button>
+                                    </div>
+                            
+                                </div>
+                            
+                            
+                            
+                            
+                            </div>
+                            
+                            
+                            <div id="personal-block" class="tab-content personal-wr">
+                            
+                                <h5 class="title">
+                                    <span class="icon-avatar"></span>
+                                    Personal information
+                                </h5>
+                            
+                                <ul class="tabs-per">
+                                    <li class="per-link active-per" data-tab="per-prof"><p>Profile</p></li>
+                                    <li class="per-link" data-tab="per-address"><p>Address</p></li>
+                                </ul>
+                            
+                            
+                                <div class="main-personal">
+                            
+                                    <div id="per-log" class="per-tab active-per-tab">
+                            
+                                        <div class="form-main">
+                                            <form>
+                                                <div class="form-main__item--group">
+                                                    <div class="form-main__item">
+                                                        <label>
+                                                            <span>Name</span>
+                            
+                                                            <input type="text">
+                            
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-main__item">
+                                                        <label>
+                                                            <span>Last name</span>
+                            
+                                                            <input type="text">
+                            
+                                                        </label>
+                                                    </div>
+                            
+                                                </div>
+                                                <div class="form-main__item--group">
+                                                    <div class="form-main__item">
+                                                        <label>
+                                                            <span>Personal №</span>
+                            
+                                                            <input type="text">
+                            
+                                                        </label>
+                            
+                                                        <div class="checkbox checkbox-simple">
+                                                            <label>
+                                                                <input type="checkbox" class="checkbox-input-simple">
+                                                                <span class="checkbox-sq">I don’t have Personal №</span>
+                                                            </label>
+                                                        </div>
+                            
+                                                    </div>
+                            
+                                                    <div class="form-main__item">
+                                                        <label>
+                                                            <span>Date of birth</span>
+                            
+                                                            <input type="text"  id="datepicker" />
+                            
+                                                            <p class="calendar"><img src="img/calendar.svg" alt="calendar"></p>
+                            
+                                                        </label>
+                                                    </div>
+                            
+                                                </div>
+                                                <div class="form-main__item--group">
+                                                    <div class="form-main__item">
+                                                        <label>
+                                                            <span>Place of birth</span>
+                            
+                                                            <input type="text">
+                            
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-main__item">
+                                                        <label>
+                                                            <span>Occupation</span>
+                            
+                                                            <input type="text">
+                            
+                                                        </label>
+                                                    </div>
+                            
+                                                </div>
+                            
+                                                <h5 class="title-sub">Identity document</h5>
+                            
+                                                <div class="form-main__item--group">
+                            
+                                                    <div class="form-main__item">
+                            
+                                                            <span>Document type</span>
+                            
+                                                            <div class="input__item select-block">
+                            
+                                                                <select>
+                                                                    <option>Passport</option>
+                                                                    <option>ID auto</option>
+                                                                </select>
+                            
+                                                                <span class="icon-down-arrow"></span>
+                                                            </div>
+                            
+                                                    </div>
+                            
+                                                    <div class="form-main__item">
+                            
+                                                        <span>Document issuing country</span>
+                            
+                                                        <div class="input__item select-block">
+                            
+                                                            <select>
+                                                                <option>England</option>
+                                                                <option>France</option>
+                                                                <option>Turkie</option>
+                                                            </select>
+                            
+                                                            <span class="icon-down-arrow"></span>
+                                                        </div>
+                            
+                                                    </div>
+                            
+                            
+                                                    <div class="form-main__item">
+                                                        <label>
+                                                            <span>Document issuing date</span>
+                            
+                                                            <input type="text"  id="datepicker1" />
+                            
+                                                            <p class="calendar"><img src="img/calendar.svg" alt="calendar"></p>
+                            
+                                                        </label>
+                                                    </div>
+                            
+                                                </div>
+                                                <div class="form-main__item--group">
+                            
+                                                    <div class="form-main__item">
+                                                        <label>
+                                                            <span>Document №</span>
+                            
+                                                            <input type="text">
+                            
+                                                        </label>
+                            
+                                                    </div>
+                            
+                                                    <div class="form-main__item">
+                                                        <label>
+                                                            <span>Issuing Authority</span>
+                            
+                                                            <input type="text">
+                            
+                                                        </label>
+                            
+                                                    </div>
+                            
+                                                    <div class="form-main__item">
+                                                        <label>
+                                                            <span>Document expiration date</span>
+                            
+                                                            <input type="text"  id="datepicker2" />
+                            
+                                                            <p class="calendar"><img src="img/calendar.svg" alt="calendar"></p>
+                            
+                                                        </label>
+                                                    </div>
+                            
+                                                </div>
+                            
+                            
+                                                <div class="document-block">
+                            
+                                                    <ul class="document-list">
+                            
+                                                        <li class="document-item document-choose">
+                            
+                                                            <span class="document-icon">
+                                                                <span class="icon-passport"></span>
+                                                            </span>
+                            
+                                                            <p>
+                                                                <span class="document-txt">Document submited</span>
+                                                                <span class="document-reject-txt">Rejected</span>
+                                                                <span class="document-reject-reason">Rejection reason</span>
+                                                            </p>
+                            
+                                                        </li>
+                            
+                                                        <li class="document-item document-reject">
+                            
+                                                            <span class="document-icon">
+                                                                <span class="icon-driving-license"></span>
+                                                            </span>
+                            
+                                                            <p>
+                                                                <span class="document-txt">National ID</span>
+                                                                <span class="document-reject-txt">Rejected</span>
+                                                                <span class="document-reject-reason">Rejection reason</span>
+                                                            </p>
+                            
+                                                        </li>
+                            
+                                                        <li class="document-item">
+                            
+                                                            <span class="document-icon">
+                                                                <span class="icon-id-card"></span>
+                                                            </span>
+                            
+                                                            <p>
+                                                                <p class="document-txt">Other
+                                                                    <span class="tooltip">
+                                                                        <span class="icon-information"></span>
+                                                                        <span class="tooltiptext">
+                                                                            DOCUMENT REQUIREMENTS:
+                                                                            - Sharp color image
+                                                                            - Without any hidden data
+                                                                            - Dimensions above 600 x 600 pxs
+                                                                            - Format JPG, JPEG
+                                                                        </span>
+                                                                    </span>
+                                                                </p>
+                                                                <span class="document-reject-txt">Rejected</span>
+                                                                <span class="document-reject-reason">Rejection reason</span>
+                                                            </p>
+                            
+                                                        </li>
+                            
+                                                    </ul>
+                            
+                                                </div>
+                            
+                            
+                            
+                                                <h5 class="title-sub">Document scan</h5>
+                            
+                                                <div class="form-main__item file-personal">
+                                                    <label>
+                                                        <span>Attach file</span>
+                            
+                                                        <div class="display-flex">
+                            
+                                                            <div class="input__item file">
+                                                                <input type="file">
+                                                                <span class="select-file">Select file</span>
+                            
+                                                            </div>
+                            
+                                                             <div class="tooltip">
+                                                                <span class="icon-information"></span>
+                                                                <span class="tooltiptext">
+                                                                    DOCUMENT REQUIREMENTS:
+                                                                    - Sharp color image
+                                                                    - Without any hidden data
+                                                                    - Dimensions above 600 x 600 pxs
+                                                                    - Format JPG, JPEG
+                                                                </span>
+                                                            </div>
+                            
+                                                        </div>
+                            
+                            
+                                                    </label>
+                            
+                                                    <p class="max-size">Maximum file size is 3 MB</p>
+                                                </div>
+                            
+                            
+                            
+                                                <div class="form-main__item communicate">
+                            
+                                                    <span>Mobile number</span>
+                            
+                                                    <div class="communicate__item">
+                            
+                                                        <input id="phone" type="tel">
+                                                        <span id="valid-msg" class="hide">Valid</span>
+                                                        <span id="error-msg" class="hide">Invalid number</span>
+                            
+                                                    </div>
+                            
+                                                    <p class="btn btn-confirm">Confirm</p>
+                                                </div>
+                            
+                            
+                            
+                                                <div class="form-main__item communicate">
+                            
+                                                    <span>Telegram Username</span>
+                            
+                                                    <div class="communicate__item">
+                            
+                                                        <input id="telegram" type="tel" placeholder="&#64;">
+                                                        <span id="valid-msg-telegram" class="hide">Valid</span>
+                                                        <span id="error-msg-telegram" class="hide">Invalid telegram</span>
+                            
+                                                    </div>
+                            
+                                                    <p class="btn btn-confirm">Confirm</p>
+                                                    
+                                                    <div class="communicate__links">
+                                                        <a href="/">What is telegram?</a>
+                                                        <a href="/">Wtah is Telegram Username?</a>
+                                                    </div>
+                                                </div>
+                            
+                                                <h6 class="title--sm">Tax residency information FATCA purposes</h6>
+                            
+                                                <div class="display-flex">
+                                                    <p>Are you a US citizen, US green-card holder or by any other means US tax resident? </p>
+                                                    <div class="tooltip">
+                                                        <span class="icon-information"></span>
+                                                        <span class="tooltiptext">
+                                                            In order to comply with FATCA regulations, the USA is defined as the USA and its jurisdictions:<br>
+                                                            - Puerto Rico;<br>
+                                                            - US Virgin Islands;<br>
+                                                            - Guam;<br>
+                                                            - North Marin Islands;<br>
+                                                            - American Samoa.
+                                                        </span>
+                                                    </div>
+                                                </div>
+                            
+                                                <div class="radio radio-simple">
+                            
+                                                    <div class="display-flex">
+                                                        <label class="open-specify">
+                                                            <input type="radio" name="radio-choose" class="radio-input-simple">
+                                                            <span class="radio-sq">Yes</span>
+                                                        </label>
+                                                        <label class="close-specify">
+                                                            <input type="radio" name="radio-choose" class="radio-input-simple" checked>
+                                                            <span class="radio-sq">No</span>
+                                                        </label>
+                                                    </div>
+                            
+                                                    <div class="form-main__item specify">
+                                                        <label>
+                                                            <span>Please specify:</span>
+                            
+                                                            <input type="text">
+                            
+                                                        </label>
+                                                    </div>
+                            
+                                                </div>
+                            
+                                            </form>
+                                        </div>
+                            
+                            
+                                    </div>
+                            
+                                    <div id="per-device" class="per-tab">
+                                        <h5 class="title-sub">Device</h5>
+                                    </div>
+                            
+                                </div>
+                            
+                            
+                            
+                            
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="table table-b-s show-table-buy-sell" id="table__buy">
+                        <h3 class="title">Recent transactions</h3>
+
+                        <table>
+
+                            <thead>
+                                <tr>
+                                    <th><span>Transaction</span></th>
+                                    <th><span>date</span></th>
+                                    <th><span>BTC amount</span></th>
+                                    <th><span>description</span></th>
+                                    <th><span>status</span></th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>You sell</td>
+                                    <td>09.08.2018</td>
+                                    <td>1.000000000</td>
+                                    <td>(1 BTC = 6223Ю1423432 USD), Currency exchange</td>
+                                    <td><span class="color green">Completed</span></td>
+                                </tr>
+                                <tr>
+                                    <td>You sell</td>
+                                    <td>09.08.2018</td>
+                                    <td>1.000000000</td>
+                                    <td>eMoney - Bitcoin</td>
+                                    <td><span class="color green">Completed</span></td>
+                                </tr>
+                                <tr>
+                                    <td>You sell</td>
+                                    <td>09.08.2018</td>
+                                    <td>1.000000000</td>
+                                    <td>(1 BTC = 6223Ю1423432 USD), Currency exchange</td>
+                                    <td><span class="color green">Completed</span></td>
+                                </tr>
+                                <tr>
+                                    <td>You sell</td>
+                                    <td>09.08.2018</td>
+                                    <td>1.000000000</td>
+                                    <td>eMoney - Bitcoin</td>
+                                    <td><span class="color green">Completed</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                    <div class="table table-b-s" id="table__sell">
+                        <h3 class="title">Recent transactions</h3>
+
+                        <table>
+
+                            <thead>
+                                <tr>
+                                    <th><span>Transaction</span></th>
+                                    <th><span>date</span></th>
+                                    <th><span>BTC amount</span></th>
+                                    <th><span>description</span></th>
+                                    <th><span>status</span></th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>You sell</td>
+                                    <td>09.08.2018</td>
+                                    <td>1.000000000</td>
+                                    <td>(1 BTC = 6223Ю1423432 USD), Currency exchange</td>
+                                    <td><span class="color green">Completed</span></td>
+                                </tr>
+                                <tr>
+                                    <td>You sell</td>
+                                    <td>09.08.2018</td>
+                                    <td>1.000000000</td>
+                                    <td>eMoney - Bitcoin</td>
+                                    <td><span class="color green">Completed</span></td>
+                                </tr>
+                                <tr>
+                                    <td>You sell</td>
+                                    <td>09.08.2018</td>
+                                    <td>1.000000000</td>
+                                    <td>(1 BTC = 6223Ю1423432 USD), Currency exchange</td>
+                                    <td><span class="color green">Completed</span></td>
+                                </tr>
+                                <tr>
+                                    <td>You sell</td>
+                                    <td>09.08.2018</td>
+                                    <td>1.000000000</td>
+                                    <td>eMoney - Bitcoin</td>
+                                    <td><span class="color green">Completed</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    
+    <footer class="footer">
+    
+        
+        <div class="footer-top">
+            <div class="container">
+        
+                <div class="footer-top--wr">
+        
+                    <div class="logo"><a href="/"><img src="img/logo.png" alt="logo"></a></div>
+        
+                    <div>
+                        <ul class="footer-list">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="about.html">Term of Use</a></li>
+                            <li><a href="about.html">ALM Policy</a></li>
+                            <li><a href="about.html">Confidentiality and security</a></li>
+                            <li><a href="about.html">General agreement</a></li>
+                        </ul>
+                    </div>
+        
+                    <div>
+                        <ul class="footer-list">
+                            <li><a href="about.html">Servicing Terms & Conditions</a></li>
+                            <li><a href="about.html">Data protection policy</a></li>
+                            <li><a href="about.html">Cookie</a></li>
+                            <li><a href="about.html">Fees & Limits</a></li>
+                            <li><a href="about.html">Frequently Asked Questions</a></li>
+                            <li><a href="about.html">Contact</a></li>
+                        </ul>
+                    </div>
+        
+                    <div>
+        
+                        <ul class="languages">
+                            <li><a href="/">English</a></li>
+                            <li><a href="/">Русский</a></li>
+                        </ul>
+        
+                        
+                        <ul class="social">
+                            <li><a href="/" class="social quest"></a></li>
+                            <li><a href="/" class="social phone"></a></li>
+                            <li><a href="/" class="social in"></a></li>
+                            <li><a href="/" class="social inst"></a></li>
+                            <li><a href="/" class="social fac"></a></li>
+                            <li><a href="/" class="social sky"></a></li>
+                            <li><a href="/" class="social yout"></a></li>
+                            <li><a href="/" class="social twit"></a></li>
+                        </ul>
+        
+                    </div>
+        
+                </div>
+        
+            </div>
+        </div>
+    
+        
+        <div class="footer-bot">
+            <div class="container">
+        
+                <ul class="stores">
+                    <li><a href="/"><img src="img/btn-appstore.png" alt="appstore"></a></li>
+                    <li><a href="/"><img src="img/logo-google-play-vetor.png" alt="google-play"></a></li>
+                    <li><a href="/"><img src="img/wind-store.png" alt="wind-store"></a></li>
+                </ul>
+        
+                <ul class="pay-system">
+                    <li><span><img src="img/visa-pay-logo.svg" alt="visa-pay"></span></li>
+                    <li><span><img src="img/mastercard.svg" alt="mastercard"></span></li>
+                </ul>
+        
+            </div>
+        </div>
+    
+    </footer>
+
+</div>
+
+</body>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/intlTelInput.js"></script>
+<script src="js/main.js"></script>
+</html>

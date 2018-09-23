@@ -78,6 +78,20 @@ $(document).ready(function()
         $(".specify").show('300');
     });
 
+    $('.document-item').click(function() {
+
+        $('.document-item').removeClass('document-choose');
+        $(this).toggleClass('document-choose');
+
+    });
+
+    $('.document-reject').click(function() {
+
+        $(".popup-reject").addClass('open');
+        $(this).removeClass('document-choose');
+
+    });
+
 });
 
 (function($) {
@@ -214,9 +228,6 @@ $( function() {
     });
 } );
 
-/*=== initialization phone ==== */
-/*$(document).ready(function(){
-
     var telInput = $("#phone"),
         errorMsg = $("#error-msg"),
         validMsg = $("#valid-msg");
@@ -276,6 +287,5 @@ $( function() {
             event.preventDefault();
         }
     });
-});*/
 
-/*=== end initialization phone ==== */
+

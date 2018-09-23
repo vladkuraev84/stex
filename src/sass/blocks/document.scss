@@ -1,0 +1,101 @@
+
+.document {
+
+  &-block {
+
+    p {
+      margin-bottom: 0;
+    }
+
+  }
+
+  &-list {
+    width: auto;
+    margin: 0 -20px;
+    @include flexBox(center, row, center, wrap);
+  }
+
+  &-item {
+    @include flexBox(center, column, center, wrap);
+    margin: 20px 10px;
+    min-width: 220px;
+    max-width: 30.33%;
+    height: 150px;
+    width: 100%;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background: #f9fafb;
+    text-align: center;
+    cursor: pointer;
+
+    .document-reject-reason, .document-reject-txt {
+      display: none;
+    }
+  }
+
+  &-icon {
+
+    span {
+      font-size: 45px;
+      color: #4c84eb;
+    }
+
+  }
+
+  &-txt {
+    color: #212121;
+    font-size: 1.125rem;
+    font-family: $proximaBold;
+
+    @include flexBox(center, row, center, nowrap);
+
+      span {
+        font-family: $proximaRegular;
+        font-size: 1rem;
+      }
+
+      .tooltiptext {
+        margin-left: 0;
+      }
+
+  }
+
+
+
+  &-choose {
+    background: #4c84eb;
+
+    .document-icon span, .document-txt, .icon-information {
+      color: #ffffff;
+    }
+  }
+
+  &-reject-txt, &-reject-reason {
+    color: #ff4f4f;
+  }
+
+  &-reject-reason {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  &-reject {
+    background: #ffdbdb;
+    cursor: auto;
+
+    .document-icon span {
+      color: #ff4f4f;
+    }
+
+    .document-txt {
+      display: none !important;
+    }
+
+    .document-reject-reason, .document-reject-txt {
+      display: block;
+    }
+
+  }
+
+}

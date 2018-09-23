@@ -216,9 +216,9 @@ ul, ol {
         }
 }
 
-/*.hide {
-    display: none;
-}*/
+.hide {
+    display: none !important;
+}
 
 .display-flex {
     display: flex;
