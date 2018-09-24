@@ -124,6 +124,30 @@
 
   }
 
+  &-address {
+
+    .title--sm {
+      margin-top: 0.25rem;
+      margin-bottom: 1.45rem;
+    }
+
+    &-info_list {
+      li {
+        margin-top: 15px;
+      }
+    }
+
+    &__btn {
+      margin-top: 2.2rem;
+
+      .btn {
+        font-size: 1.125rem;
+        padding: 15px 45px;
+      }
+    }
+
+  }
+
 }
 
 .tabs-per {
