@@ -2,12 +2,29 @@
 .sidebar {
 
   width: 235px;
+  flex:none;
+
+    @include respond-to(phone) {
+      width: 100%;
+
+      margin-bottom: 0;
+      @include flexBox(center, row, center, nowrap);
+      margin-right: 0 !important;
+      margin-left: 0 !important;
+    }
 
   >p {
     text-align: right;
     padding-right: 0 !important;
 
-      a {
+    @include respond-to(phone) {
+      flex: none;
+      margin-right: 10px !important;
+      padding: 10px 0 10px !important;
+
+    }
+
+    a {
         font-size: 1.2rem;
 
           &:hover {
@@ -24,19 +41,45 @@
 
   ul {
     width: auto;
+
+      @include respond-to(phone) {
+        width: 100%;
+        @include flexBox(space-between, row, center, nowrap);
+        border-top: 1px solid #dddfe2;
+        border-bottom: 1px solid #dddfe2;
+      }
   }
 
   li {
     border-bottom: 1px solid #dddfe2;
 
+      @include respond-to(phone) {
+        height: 100%;
+        border-bottom: none;
+        border-right: 1px solid #dddfe2;
+        flex: 1 0 auto;
+      }
 
-      &:first-child {
+
+    &:first-child {
         border-top: 1px solid #dddfe2;
+
+        @include respond-to(phone) {
+          border-top: none;
+          border-left: 1px solid #dddfe2;
+        }
       }
     
     p {
       cursor: pointer;
       @include flexBox(flex-start, row, center, nowrap);
+
+        @include respond-to(phone) {
+          line-height: 1.2;
+          height: 100%;
+          font-size: .85rem;
+          padding: 10px 10px;
+        }
 
       >span {
         margin-right: 10px;

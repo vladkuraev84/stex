@@ -78,6 +78,30 @@ $(document).ready(function()
         $(".specify").show('300');
     });
 
+    $('.close-specify--uss-resident').click(function() {
+        $(".specify--uss-resident").hide('300');
+    });
+
+    $('.open-specify--uss-resident').click(function() {
+        $(".specify--uss-resident").show('300');
+    });
+
+    $('.close-specify--politic').click(function() {
+        $(".specify--politic").hide('300');
+    });
+
+    $('.open-specify--politic').click(function() {
+        $(".specify--politic").show('300');
+    });
+
+    $('.close-specify--partner').click(function() {
+        $(".specify--partner").hide('300');
+    });
+
+    $('.open-specify--partner').click(function() {
+        $(".specify--partner").show('300');
+    });
+
     $('.document-item').click(function() {
 
         $('.document-item').removeClass('document-choose');
@@ -228,64 +252,64 @@ $( function() {
     });
 } );
 
-    var telInput = $("#phone"),
-        errorMsg = $("#error-msg"),
-        validMsg = $("#valid-msg");
+var telInput = $("#phone"),
+    errorMsg = $("#error-msg"),
+    validMsg = $("#valid-msg");
 
-    // initialise plugin
-    telInput.intlTelInput({
-        // allowDropdown: false,
-        // autoHideDialCode: false,
-        // autoPlaceholder: "off",
-        // dropdownContainer: "body",
-        // excludeCountries: ["us"],
-        // formatOnDisplay: false,
-        // geoIpLookup: function(callback) {
-        //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
-        //     var countryCode = (resp && resp.country) ? resp.country : "";
-        //     callback(countryCode);
-        //   });
-        // },
-        // hiddenInput: "full_number",
-        // initialCountry: "auto",
-        // localizedCountries: { 'de': 'Deutschland' },
-        // nationalMode: false,
-        // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
-        // placeholderNumberType: "MOBILE",
-        // preferredCountries: ['cn', 'jp'],
-        separateDialCode: true,
-        utilsScript:"utils.js"
-    });
+// initialise plugin
+telInput.intlTelInput({
+    // allowDropdown: false,
+    // autoHideDialCode: false,
+    // autoPlaceholder: "off",
+    // dropdownContainer: "body",
+    // excludeCountries: ["us"],
+    // formatOnDisplay: false,
+    // geoIpLookup: function(callback) {
+    //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+    //     var countryCode = (resp && resp.country) ? resp.country : "";
+    //     callback(countryCode);
+    //   });
+    // },
+    // hiddenInput: "full_number",
+    // initialCountry: "auto",
+    // localizedCountries: { 'de': 'Deutschland' },
+    // nationalMode: false,
+    // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+    // placeholderNumberType: "MOBILE",
+    // preferredCountries: ['cn', 'jp'],
+    separateDialCode: true,
+    utilsScript:"utils.js"
+});
 
-    var reset = function() {
-        telInput.removeClass("error");
-        errorMsg.addClass("hide");
-        validMsg.addClass("hide");
-    };
+var reset = function() {
+    telInput.removeClass("error");
+    errorMsg.addClass("hide");
+    validMsg.addClass("hide");
+};
 
-    // on blur: validate
-    telInput.blur(function() {
-        reset();
-        if ($.trim(telInput.val())) {
-            if (telInput.intlTelInput("isValidNumber")) {
-                validMsg.removeClass("hide");
-                var getCode = telInput.intlTelInput('getSelectedCountryData').dialCode;
-                alert(getCode);
-            } else {
-                telInput.addClass("error");
-                errorMsg.removeClass("hide");
-            }
+// on blur: validate
+telInput.blur(function() {
+    reset();
+    if ($.trim(telInput.val())) {
+        if (telInput.intlTelInput("isValidNumber")) {
+            validMsg.removeClass("hide");
+            var getCode = telInput.intlTelInput('getSelectedCountryData').dialCode;
+            alert(getCode);
+        } else {
+            telInput.addClass("error");
+            errorMsg.removeClass("hide");
         }
-    });
+    }
+});
 
-    // on keyup / change flag: reset
-    telInput.on("keyup change", reset);
+// on keyup / change flag: reset
+telInput.on("keyup change", reset);
 
-    $("#phone").on("keypress keyup blur",function (event) {
-        $(this).val($(this).val().replace(/[^\d].+/, ""));
-        if ((event.which < 48 || event.which > 57)) {
-            event.preventDefault();
-        }
-    });
+$("#phone").on("keypress keyup blur",function (event) {
+    $(this).val($(this).val().replace(/[^\d].+/, ""));
+    if ((event.which < 48 || event.which > 57)) {
+        event.preventDefault();
+    }
+});
 
 

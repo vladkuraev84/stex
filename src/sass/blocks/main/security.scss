@@ -50,6 +50,7 @@
 
     .form-main__item {
       max-width: 100%;
+      flex-wrap: nowrap;
     }
 
 
@@ -177,6 +178,10 @@
     @include flexBox(center, column, flex-start, wrap);
     font-size: 0.9375rem;
     color: $colorBody;
+
+      @include respond-to(desktop) {
+        font-size: .8rem;
+      }
 
       &.device-list__item--img {
         margin-right: 0.2rem;

@@ -71,6 +71,27 @@
     }
   }
 
+  &-submited-info {
+    display: none;
+  }
+
+  &-submited {
+    background: #4c84eb;
+
+    span {
+      color: #ffffff;
+    }
+
+    &-info {
+      display: block;
+      font-family: Conv_ProximaNova-Bold,sans-serif;
+    }
+
+    .document-txt, .document-reject-reason, .document-reject-txt {
+      display: none;
+    }
+  }
+
   &-reject-txt, &-reject-reason {
     color: #ff4f4f;
   }
@@ -88,12 +109,13 @@
       color: #ff4f4f;
     }
 
-    .document-txt {
+    .document-txt, .document-submited {
       display: none !important;
     }
 
     .document-reject-reason, .document-reject-txt {
       display: block;
+      font-family: Conv_ProximaNova-Bold,sans-serif;
     }
 
   }

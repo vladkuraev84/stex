@@ -51,6 +51,10 @@
 
       span {
         font-family: $proximaBold;
+
+        @include respond-to(desktop) {
+          display: block;
+        }
       }
     }
 

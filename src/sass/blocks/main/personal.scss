@@ -47,7 +47,7 @@
     .form-main__item {
       margin: 8px;
 
-      &.specify {
+      &.specify, &.specify--uss-resident, &.specify--politic, &.specify--partner {
         display: none;
         max-width: 15rem;
         margin-bottom: 20px;

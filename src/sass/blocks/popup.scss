@@ -41,6 +41,10 @@
     &-form {
       padding: 1.875rem 2.5rem;
 
+      @include respond-to(desktop) {
+        padding: 1.875rem 1.5rem;
+      }
+
       div {
         margin-bottom: 1.25rem;
       }
@@ -51,6 +55,11 @@
     background-color: #f9fafb;
     padding: 2.1875rem 2.5rem;
     margin-top: 0;
+
+      @include respond-to(desktop) {
+        padding: 2.1875rem 1.5rem;
+      }
+
   }
 
   p {
@@ -142,6 +151,11 @@
   .btn {
     font-size: 1.125rem;
     padding: 15px 25px;
+
+    @include respond-to(desktop) {
+      padding: 15px;
+      flex: none;
+    }
   }
 
   &.open {
