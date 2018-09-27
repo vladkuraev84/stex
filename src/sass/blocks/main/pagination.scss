@@ -1,0 +1,39 @@
+
+$sizePagin: 28px;
+$bacBlue: #4c84eb;
+.pagination {
+
+  padding: 30px 30px 35px;
+
+  ul {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+
+    margin: 0 -5px;
+  }
+
+  li {
+    margin: 5px;
+
+  }
+
+  a {
+    display: inline-block;
+    width: $sizePagin;
+    height: $sizePagin;
+    line-height: $sizePagin;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 14px;
+    border: 1px solid $bacBlue;
+
+    &.pagination-current, &:hover {
+      color: $white;
+      background: $bacBlue;
+    }
+  }
+
+}

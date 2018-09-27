@@ -17,7 +17,7 @@
   }
 
   &-top {
-    padding: 3.125rem 0;
+    padding: 3.125rem 0 0;
 
       &--wr {
         margin: 0 -1.875rem;
@@ -38,6 +38,12 @@
         opacity: 1;
       }
     }
+
+    p {
+      color: $colorBody;
+      opacity: .5;
+      margin-top: 15px;
+    }
   }
 
 
@@ -47,6 +53,11 @@
 
     .container, ul {
       @include flexBox(space-between, row, center, wrap);
+    }
+
+    p {
+      color: $colorBody;
+      opacity: .5;
     }
 
 
@@ -80,5 +91,12 @@
     &:last-child {
       width: 59px;
     }
+  }
+}
+
+.stores {
+  span {
+    color: $colorBody;
+    opacity: .5;
   }
 }
