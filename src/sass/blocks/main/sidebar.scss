@@ -13,6 +13,18 @@
       margin-left: 0 !important;
     }
 
+    @include respond-to(phone-medium) {
+      position: fixed;
+      z-index: 10;
+      background: #fff;
+      flex-wrap: wrap;
+      top: 135px;
+      margin: 0 !important;
+      width: 80%;
+      max-width: 20rem;
+      left: -100%;
+    }
+
   >p {
     text-align: right;
     padding-right: 0 !important;
@@ -48,6 +60,10 @@
         border-top: 1px solid #dddfe2;
         border-bottom: 1px solid #dddfe2;
       }
+
+      @include respond-to(phone-medium) {
+        flex-wrap: wrap;
+      }
   }
 
   li {
@@ -60,6 +76,10 @@
         flex: 1 0 auto;
       }
 
+      @include respond-to(phone-medium) {
+        width: 100%;
+      }
+
 
     &:first-child {
         border-top: 1px solid #dddfe2;
@@ -68,7 +88,11 @@
           border-top: none;
           border-left: 1px solid #dddfe2;
         }
-      }
+
+        @include respond-to(phone-medium) {
+          border-left: none;
+        }
+    }
     
     p {
       cursor: pointer;
@@ -99,6 +123,15 @@
 
     }
 
+  }
+
+  &-mobile {
+    left: 0;
+    -webkit-transition: .3s all;
+    -moz-transition: .3s all;
+    -ms-transition: .3s all;
+    -o-transition: .3s all;
+    transition: .3s all;
   }
 
 }

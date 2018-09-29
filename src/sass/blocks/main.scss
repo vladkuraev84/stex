@@ -16,12 +16,22 @@
 
   color: #808386;
 
+  @include respond-to(phone-medium) {
+    margin-top: 1.5rem;
+    padding: 0.875rem;
+  }
+
   &-content {
     flex: 1 1;
 
     @include respond-to(desktop) {
       flex: 1 0;
+
       margin: 15px 0 !important;
+    }
+
+    @include respond-to(phone) {
+      width: 100%;
     }
   }
 

@@ -6,6 +6,10 @@
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   flex: 0 auto;
 
+  @include respond-to(phone) {
+    padding: 12px 0;
+  }
+
   .container {
     @include flexBox(space-between, row, center, wrap);
   }
@@ -24,7 +28,8 @@
   flex: 1 0;
 
   @include respond-to(phone) {
-    max-width: 115px;
+    width: 115px;
+    flex: none;
   }
 
   a {
@@ -43,6 +48,16 @@
 
   li {
     margin: 0 10px;
+
+    @include respond-to(phone-little) {
+      margin: 0 10px 0 0;
+    }
+  }
+
+  .btn {
+    @include respond-to(phone-little) {
+      padding: 10px;
+    }
   }
 
 }

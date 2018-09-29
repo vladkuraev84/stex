@@ -168,13 +168,13 @@
     <div class="course-header">
         <div class="container">
             <ul class="course-header--list">
-                <li><span>BCH/EUR</span>&nbsp;<span>1,349.52</span></li>
+                <li class="hide-mobile"><span>BCH/EUR</span>&nbsp;<span>1,349.52</span></li>
                 <li><span>BTC/EUR</span>&nbsp;<span>16,429.15</span></li>
-                <li><span>LTC/EUR</span>&nbsp;<span>142.52</span></li>
+                <li class="hide-mobile"><span>LTC/EUR</span>&nbsp;<span>142.52</span></li>
                 <li><span>DASH/EUR</span>&nbsp;<span>357.92</span></li>
-                <li><span>XRP/EUR</span>&nbsp;<span>0.8332</span></li>
+                <li class="hide-mobile"><span>XRP/EUR</span>&nbsp;<span>0.8332</span></li>
                 <li><span>BCH/EUR</span>&nbsp;<span>530.06</span></li>
-                <li><span>BTC/USD</span>&nbsp;<span>6,452.93</span></li>
+                <li class="hide-mobile"><span>BTC/USD</span>&nbsp;<span>6,452.93</span></li>
                 <li><span>ETH/USD</span>&nbsp;<span>257.09</span></li>
             </ul>
         </div>
@@ -229,7 +229,7 @@
 
             
             <div class="cripto-list">
-                <ul>
+                <ul class="slider-cripto-list">
                     <li>
                         <button class="btn btn-cripto active"><span class="icon-if_Bitcoin_272914"><span class="path1"></span><span class="path2"></span></span> Bitcoin</button>
                     </li>
@@ -280,9 +280,15 @@
                     <div class="main-tab--wr">
 
                         
+                        <div class="menu-icon">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                        
                         <div class="sidebar">
                         
-                            <p><a href="/"><span class="icon-go-back-arrow"></span></a></p>
+                            <p class="hide-mobile"><a href="/"><span class="icon-go-back-arrow"></span></a></p>
                         
                             <ul class="tabs">
                                 <li class="tab-link current" data-tab="buy-sell"><p><span class="icon-cart"></span> Buy / Sell</p></li>
@@ -293,6 +299,16 @@
                             </ul>
                         
                         </div>
+                        
+                        
+                        <script>
+                            $('.menu-icon').click(function()
+                            {
+                                $(this).toggleClass('clicked');
+                                $('.sidebar').toggleClass('sidebar-mobile');
+                            });
+                        
+                        </script>
 
                         <div class="main-content">
                             
@@ -1525,6 +1541,7 @@
                                                     </div>
                             
                                                     <p class="btn btn-confirm">Confirm</p>
+                            
                                                 </div>
                             
                             
@@ -2097,5 +2114,7 @@
 </body>
 <script src="js/jquery-ui.min.js"></script>
 <script src="js/intlTelInput.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/slick.min.js"></script>
 <script src="js/main.js"></script>
 </html>

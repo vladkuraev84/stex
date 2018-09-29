@@ -64,8 +64,14 @@
   width: auto;
   margin: 0 -15px;
   position: relative;
-  
-    &:after {
+
+    @include respond-to(telephone) {
+      margin: 0;
+      justify-content: center;
+      align-items: flex-end;
+    }
+
+  &:after {
       content: '';
       position: absolute;
       bottom: 6px;
@@ -74,10 +80,19 @@
       height: 1px;
       background: #dddfe2;
       z-index: 1;
+
+      @include respond-to(telephone) {
+        left: 6px;
+        width: 95%;
+      }
     }
 
   li {
     margin: 5px 15px;
+
+    @include respond-to(telephone) {
+      margin: 5px;
+    }
 
     p {
       padding: 5px 0;
@@ -88,6 +103,14 @@
       cursor: pointer;
       position: relative;
       z-index: 2;
+
+      @include respond-to(telephone) {
+        font-size: 12px;
+      }
+
+      @include respond-to(phone-small) {
+        font-size: 10px;
+      }
     }
 
     &.active-sec {
@@ -144,6 +167,10 @@
         border-bottom: 1px solid #dddfe2;
         margin-bottom: 0;
         font-family: $proximaBold;
+
+          @include respond-to(telephone) {
+            padding: 0.875rem 0.8rem;
+          }
         
         span {
           color: #808386;
@@ -155,7 +182,11 @@
     &-bot {
       padding: 1.5rem 1.5625rem;
 
-        p {
+        @include respond-to(telephone) {
+          padding: 0.875rem 0.8rem;
+        }
+
+      p {
           &:last-child {
             margin-bottom: 0;
           }
@@ -168,6 +199,18 @@
 
 .device-list {
   margin: 15px 0;
+
+  @include respond-to(phone) {
+    .btn {
+      margin-top: 15px;
+    }
+  }
+
+  @include respond-to(telephone) {
+    .btn {
+      width: 50%;
+    }
+  }
 
   li {
     margin: 10px 0;
@@ -183,8 +226,18 @@
         font-size: .8rem;
       }
 
+      @include respond-to(telephone) {
+        width: 50%;
+        margin-top: 15px;
+      }
+
       &.device-list__item--img {
         margin-right: 0.2rem;
+
+          @include respond-to(telephone) {
+            margin-right: 0;
+          }
+
       }
 
       span {
@@ -200,10 +253,18 @@
     -moz-border-radius: 20px;
     border-radius: 20px;
 
+      @include respond-to(telephone) {
+        padding: 0 .8rem .875rem;
+      }
+
       &--img {
 
         border-right: 1px solid #dddfe2;
         padding-right: 1.875rem;
+
+        @include respond-to(telephone) {
+          border-right: none;
+        }
 
 
         img {

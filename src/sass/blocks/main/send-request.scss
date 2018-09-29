@@ -24,7 +24,20 @@
         -ms-transition: 0s all;
         -o-transition: 0s all;
         transition: 0s all;
+
+        @include respond-to(phone-small) {
+          font-size: 0;
+        }
       }
+
+    @include respond-to(phone-medium) {
+      padding: 17px 8px;
+      margin-right: 10px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+    }
   }
 
   p {
@@ -42,6 +55,10 @@
     @include flexBox(flex-start, row, center, nowrap);
     margin-bottom: 1.875rem;
 
+    @include respond-to(phone-medium) {
+      flex-wrap: wrap;
+    }
+
     p {
       margin-bottom: 0;
     }
@@ -55,6 +72,10 @@
         @include respond-to(desktop) {
           display: block;
         }
+      }
+
+      @include respond-to(phone-medium) {
+        margin-left: 20px;
       }
     }
 

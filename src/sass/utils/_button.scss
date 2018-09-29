@@ -89,6 +89,11 @@ $primary: #4c84eb;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
     min-width: 13.75rem;
 
+    @include respond-to(phone) {
+        margin-left:auto;
+        margin-right:auto;
+    }
+
     @include flexBox(flex-start, row, center, nowrap);
 
     [class^="icon-"], [class*=" icon-"] {
@@ -118,7 +123,8 @@ $primary: #4c84eb;
     -ms-transition: 0s all;
     -o-transition: 0s all;
     transition: 0s all;
-    &:hover {
+
+    &:hover, &:focus {
 
         color: transparent;
         background: transparent;

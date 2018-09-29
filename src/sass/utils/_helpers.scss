@@ -178,6 +178,10 @@ ul, ol {
     text-align: center;
     top: 10px;
     font-size: 12px !important;
+
+    @include respond-to(phone-medium) {
+        top: 13px;
+    }
 }
 
 .calendar {
@@ -222,8 +226,14 @@ ul, ol {
         }
 }
 
-.hide {
+.hide{
     display: none !important;
+}
+
+.hide-mobile {
+    @include respond-to(phone-medium) {
+        display: none !important;
+    }
 }
 
 .display-flex {
@@ -233,4 +243,6 @@ ul, ol {
         p {
             margin-bottom: 0;
         }
+
+
 }

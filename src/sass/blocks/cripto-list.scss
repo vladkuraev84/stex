@@ -11,5 +11,17 @@
 
     li {
       margin: 1.25rem .625rem 0;
+
+
     }
+
+  .slick-track, li {
+    @include respond-to(phone) {
+      -webkit-transition: 0s all;
+      -moz-transition: 0s all;
+      -ms-transition: 0s all;
+      -o-transition: 0s all;
+      transition: 0s all;
+    }
+  }
 }

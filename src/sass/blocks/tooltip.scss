@@ -50,6 +50,15 @@
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
+
+    @include respond-to(phone-medium) {
+      left: 0;
+      -webkit-transform: translateX(-90%);
+      -moz-transform: translateX(-90%);
+      -ms-transform: translateX(-90%);
+      -o-transform: translateX(-90%);
+      transform: translateX(-90%);
+    }
 }
 
 .tooltiptext::after {
@@ -61,4 +70,9 @@
   border-width: 5px;
   border-style: solid;
   border-color: #555 transparent transparent transparent;
+
+    @include respond-to(phone-medium) {
+      left: 93%;
+    }
+
 }

@@ -40,6 +40,12 @@
     li {
       margin: 1.875rem;
       min-width: 28%;
+
+      @include respond-to(telephone) {
+        width: 44%;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
     }
 
     &--item {
@@ -52,7 +58,12 @@
 
       @include flexBox(flex-start, row, center, nowrap);
 
-        &__img {
+        @include respond-to(telephone) {
+          padding: 15px;
+          flex-wrap: wrap;
+        }
+
+      &__img {
           width: 62px;
           height: 62px;
           -webkit-border-radius: 50%;
@@ -61,12 +72,22 @@
           overflow: hidden;
           margin-right: 20px;
 
-            img {
+        @include respond-to(telephone) {
+          margin-right: auto;
+          margin-left: auto;
+        }
+
+        img {
               width: 100%;
             }
         }
 
       &__info {
+
+        @include respond-to(telephone) {
+          width: 100%;
+        }
+
         p {
           margin-bottom: 0;
         }

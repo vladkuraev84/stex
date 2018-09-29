@@ -256,7 +256,11 @@ var telInput = $("#phone"),
     errorMsg = $("#error-msg"),
     validMsg = $("#valid-msg");
 
+telInput.intlTelInput({
+    separateDialCode: true
+});
 // initialise plugin
+/*
 telInput.intlTelInput({
     // allowDropdown: false,
     // autoHideDialCode: false,
@@ -277,9 +281,10 @@ telInput.intlTelInput({
     // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
     // placeholderNumberType: "MOBILE",
     // preferredCountries: ['cn', 'jp'],
-    separateDialCode: true,
-    utilsScript:"utils.js"
+    separateDialCode: true/!*,
+    utilsScript:"utils.js"*!/
 });
+*/
 
 var reset = function() {
     telInput.removeClass("error");
@@ -310,6 +315,46 @@ $("#phone").on("keypress keyup blur",function (event) {
     if ((event.which < 48 || event.which > 57)) {
         event.preventDefault();
     }
+});
+
+// 'use strict';
+
+$(document).ready(function()
+{
+
+    $('.slider-cripto-list').slick({
+
+
+        responsive: [{
+
+            breakpoint: 3000,
+            settings: {
+                arrows: false,
+                slidesToShow: 3,
+            }
+
+        }, {
+
+            breakpoint: 600,
+
+            settings: {
+                arrows: true,
+                dots: false,
+                slidesToShow: 2,
+                infinite: true
+            }
+
+        }, {
+
+            breakpoint: 412,
+
+            settings: {
+                slidesToShow: 1,
+            }
+
+        }],
+    });
+
 });
 
 

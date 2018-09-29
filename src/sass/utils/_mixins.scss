@@ -24,6 +24,10 @@
         @media only screen and (max-width: $phone-little) {
             @content;
         }
+    } @else if $media == phone-small {
+        @media only screen and (max-width: $phone-small) {
+            @content;
+        }
     }
 }
 

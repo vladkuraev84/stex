@@ -11,6 +11,8 @@
 
     @include respond-to(phone) {
       margin-right: 0;
+      width: 100%;
+      overflow: scroll;
     }
 
     .title {
@@ -28,6 +30,10 @@
     padding: 8px 12px;
     text-align: left;
     line-height: 1.6;
+
+    @include respond-to(phone-medium) {
+      line-height: normal;
+    }
   }
 
   thead {
@@ -50,6 +56,10 @@
 
     td {
       font-size: 15px;
+
+      @include respond-to(phone-medium) {
+        font-size: 13px;
+      }
     }
 
     tr {
@@ -71,12 +81,21 @@
 
     td, th {
       padding: 13px 25px;
+
+
+      @include respond-to(phone-medium) {
+        padding: 8px 10px;
+      }
     }
 
     tbody {
 
       td {
         font-size: 16px;
+
+        @include respond-to(phone-medium) {
+          font-size: 13px;
+        }
       }
 
     }
@@ -100,6 +119,17 @@
 
   .color {
     font-family: $proximaBold;
+  }
+
+
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 0;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #4c84eb;
+    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .0);
   }
 
 }

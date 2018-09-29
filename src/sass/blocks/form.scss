@@ -301,6 +301,10 @@ input[type="date"] {
     &--group {
       @include flexBox(flex-start, row, center, nowrap);
 
+      @include respond-to(phone) {
+        flex-wrap: wrap;
+      }
+
       >div {
         flex: 1 1;
       }
@@ -342,6 +346,10 @@ input[type="date"] {
     display: inline-block;
     width: 100%;
     margin-bottom: 5px;
+
+    @include respond-to(phone-medium) {
+      margin-bottom: 10px;
+    }
   }
 
   .checkbox {
@@ -439,8 +447,19 @@ input[type="date"] {
 .communicate {
   max-width: 33rem;
 
+  @include respond-to(telephone) {
+    .btn {
+      margin-top: 20px;
+    }
+  }
+
   &__item {
     flex: 1 1;
+
+    @include respond-to(telephone) {
+      flex: none;
+      width: 100%;
+    }
   }
 
   &__links {
@@ -462,6 +481,7 @@ input[type="date"] {
   }
 
 
+
   .intl-tel-input {
     @include flexBox(flex-start, row, center, nowrap);
     width: 100%;
@@ -481,6 +501,7 @@ input[type="date"] {
       position: static;
       height: 40px;
     }
+
 
     .country-list {
       min-width: 200px;
@@ -564,4 +585,20 @@ input[type="date"] {
 
 #valid-msg, #error-msg-telegram {
   color: #green;
+}
+
+
+@include respond-to(phone) {
+
+  .intl-tel-input.iti-container {
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    height: 90%;
+    width: 90%;
+  }
+  .intl-tel-input .country-list {
+    max-height: 100%;
+  }
+
 }

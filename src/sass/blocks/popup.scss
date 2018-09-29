@@ -45,8 +45,16 @@
         padding: 1.875rem 1.5rem;
       }
 
+      @include respond-to(phone) {
+        padding: 1.0rem 1.5rem;
+      }
+
       div {
         margin-bottom: 1.25rem;
+
+        @include respond-to(phone) {
+          margin-bottom: .25rem;
+        }
       }
     }
   }
@@ -59,6 +67,10 @@
       @include respond-to(desktop) {
         padding: 2.1875rem 1.5rem;
       }
+
+    @include respond-to(phone) {
+      padding: 1.0rem 1.5rem;
+    }
 
   }
 
@@ -141,6 +153,11 @@
     margin-top: 1.875rem;
 
     @include flexBox(flex-start, row, center, nowrap);
+
+
+    @include respond-to(phone) {
+      margin-top: 0.875rem;
+    }
 
     p {
       font-size: 14px;

@@ -1,7 +1,13 @@
 
+<div class="menu-icon">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+</div>
+
 <div class="sidebar">
 
-    <p><a href="/"><span class="icon-go-back-arrow"></span></a></p>
+    <p class="hide-mobile"><a href="/"><span class="icon-go-back-arrow"></span></a></p>
 
     <ul class="tabs">
         <li class="tab-link current" data-tab="buy-sell"><p><span class="icon-cart"></span> Buy / Sell</p></li>
@@ -12,3 +18,13 @@
     </ul>
 
 </div>
+
+
+<script>
+    $('.menu-icon').click(function()
+    {
+        $(this).toggleClass('clicked');
+        $('.sidebar').toggleClass('sidebar-mobile');
+    });
+
+</script>
