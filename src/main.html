@@ -43,7 +43,7 @@
                     </div>
 
 
-                    <div class="table table-b-s show-table-buy-sell" id="table__buy">
+                    <div class="hide-mobile table table-b-s show-table-buy-sell" id="table__buy">
                         <h3 class="title">Recent transactions</h3>
 
                         <table>
@@ -92,7 +92,7 @@
                     </div>
 
 
-                    <div class="table table-b-s" id="table__sell">
+                    <div class="hide-mobile table table-b-s" id="table__sell">
                         <h3 class="title">Recent transactions</h3>
 
                         <table>
@@ -159,4 +159,195 @@
 <script src="js/utils.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/main.js"></script>
+
+<script>
+    var telInput = $("#phone"),
+        errorMsg = $("#error-msg"),
+        validMsg = $("#valid-msg");
+
+    telInput.intlTelInput({
+        separateDialCode: true
+    });
+    // initialise plugin
+    /*
+    telInput.intlTelInput({
+        // allowDropdown: false,
+        // autoHideDialCode: false,
+        // autoPlaceholder: "off",
+        // dropdownContainer: "body",
+        // excludeCountries: ["us"],
+        // formatOnDisplay: false,
+        // geoIpLookup: function(callback) {
+        //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+        //     var countryCode = (resp && resp.country) ? resp.country : "";
+        //     callback(countryCode);
+        //   });
+        // },
+        // hiddenInput: "full_number",
+        // initialCountry: "auto",
+        // localizedCountries: { 'de': 'Deutschland' },
+        // nationalMode: false,
+        // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+        // placeholderNumberType: "MOBILE",
+        // preferredCountries: ['cn', 'jp'],
+        separateDialCode: true/!*,
+        utilsScript:"utils.js"*!/
+    });
+    */
+
+    var reset = function() {
+        telInput.removeClass("error");
+        errorMsg.addClass("hide");
+        validMsg.addClass("hide");
+    };
+
+    // on blur: validate
+    telInput.blur(function() {
+        reset();
+        if ($.trim(telInput.val())) {
+            if (telInput.intlTelInput("isValidNumber")) {
+                validMsg.removeClass("hide");
+                var getCode = telInput.intlTelInput('getSelectedCountryData').dialCode;
+                alert(getCode);
+            } else {
+                telInput.addClass("error");
+                errorMsg.removeClass("hide");
+            }
+        }
+    });
+
+    // on keyup / change flag: reset
+    telInput.on("keyup change", reset);
+
+    $("#phone").on("keypress keyup blur",function (event) {
+        $(this).val($(this).val().replace(/[^\d].+/, ""));
+        if ((event.which < 48 || event.which > 57)) {
+            event.preventDefault();
+        }
+    });
+
+    // 'use strict';
+
+    $(document).ready(function()
+    {
+
+        $('.slider-cripto-list').slick({
+
+
+            responsive: [{
+
+                breakpoint: 3000,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 3,
+                }
+
+            }, {
+
+                breakpoint: 600,
+
+                settings: {
+                    arrows: true,
+                    dots: false,
+                    slidesToShow: 2,
+                    infinite: true
+                }
+
+            }, {
+
+                breakpoint: 412,
+
+                settings: {
+                    slidesToShow: 1,
+                }
+
+            }],
+        });
+
+    });
+
+    function random1(min, max) {
+        var rand = min + Math.random() * (max + 1 - min);
+        rand = Math.floor(rand);
+        return rand;
+    }
+
+    function random2(min, max) {
+        var rand2 = min + Math.random() * (max + 1 - min);
+        rand2 = Math.floor(rand2);
+        return rand2;
+    }
+
+    function random3(min, max) {
+        var rand3 = min + Math.random() * (max + 1 - min);
+        rand3 = Math.floor(rand3);
+        return rand3;
+    }
+
+    setTimeout(function() {
+        document.getElementById('progress_1').value = random1(10, 100);
+    }, 0);
+
+    setTimeout(function() {
+        document.getElementById('progress_2').value = random2(10, 100);
+    }, 0);
+
+    setTimeout(function() {
+        document.getElementById('progress_3').value = random3(10, 100);
+    }, 0);
+
+    $( function() {
+        $( "#datepicker" ).datepicker({
+            changeMonth: true,
+            changeYear: true,
+            yearRange: '1950:2018'
+        });
+    } );
+
+    $( function() {
+        $( "#datepicker1" ).datepicker({
+            changeMonth: true,
+            changeYear: true,
+            yearRange: '1970:2018'
+        });
+    } );
+
+    $( function() {
+        $( "#datepicker2" ).datepicker({
+            changeMonth: true,
+            changeYear: true,
+            yearRange: '2000:2018'
+        });
+    } );
+
+
+    $( function ( document, window, index )
+    {
+        var inputs = document.querySelectorAll( '.inputfile' );
+        Array.prototype.forEach.call( inputs, function( input )
+        {
+            var label	 = input.nextElementSibling,
+                labelVal = label.innerHTML;
+
+            input.addEventListener( 'change', function( e )
+            {
+                var fileName = '';
+                if( this.files && this.files.length > 1 )
+                    fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
+                else
+                    fileName = e.target.value.split( '\\' ).pop();
+
+                if( fileName )
+                    label.querySelector( 'span' ).innerHTML = fileName;
+                else
+                    label.innerHTML = labelVal;
+            });
+
+            // Firefox bug fix
+            input.addEventListener( 'focus', function(){ input.classList.add( 'has-focus' ); });
+            input.addEventListener( 'blur', function(){ input.classList.remove( 'has-focus' ); });
+        });
+    }( document, window, 0 ));
+
+</script>
 </html>

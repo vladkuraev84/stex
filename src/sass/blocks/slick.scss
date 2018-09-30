@@ -166,3 +166,23 @@
   }
 
 }
+@include respond-to(telephone) {
+
+  li.slick-active {
+    .btn {
+      background: #4c84eb;
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+      color: #ffffff;
+
+        [class^=icon-] {
+          color: #ffffff;
+
+        }
+
+        .path2:before {
+          color: #4c84eb;
+        }
+    }
+  }
+
+}

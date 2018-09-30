@@ -150,6 +150,12 @@ p {
             font-family: $proximaBold;
             font-size: 1.5rem;
             margin: 1.0rem 0 0;
+
+                .tooltiptext {
+                    font-size: 1rem;
+                    font-family: $proximaRegular;
+                    margin-left: 0;
+                }
         }
 }
 

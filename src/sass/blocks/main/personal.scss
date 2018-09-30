@@ -100,7 +100,7 @@
       margin: 0;
       line-height: 1.2;
     }
-
+/*
     .file {
       width: 100%;
       @include flexBox(space-between, row, center, nowrap);
@@ -119,7 +119,7 @@
           width: 100%;
         }
       }
-    }
+    }*/
 
   }
 
@@ -209,5 +209,26 @@
     font-size: 1.25rem;
   }
 
+}
+
+.file-personal {
+  margin-left: 0 !important;
+
+    .display-flex {
+      min-width: 220px;
+      width: 31rem;
+    }
+
+    label {
+      height: 100%;
+
+        span {
+          margin-top: 0;
+        }
+
+        .select-file {
+          line-height: 1.65;
+        }
+    }
 }
 

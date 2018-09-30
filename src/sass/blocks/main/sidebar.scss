@@ -4,6 +4,26 @@
   width: 235px;
   flex:none;
 
+  overflow: hidden;
+
+    &-hide {
+      width: 35px;
+
+        ul {
+          position: relative;
+          left: -100%;
+          opacity: 0;
+        }
+      
+      .opening-sidebar {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+      }
+    }
+
     @include respond-to(phone) {
       width: 100%;
 
@@ -14,30 +34,48 @@
     }
 
     @include respond-to(phone-medium) {
-      position: fixed;
+      position: absolute;
       z-index: 10;
       background: #fff;
       flex-wrap: wrap;
-      top: 135px;
+      top: -145px;
       margin: 0 !important;
       width: 80%;
       max-width: 20rem;
       left: -100%;
     }
 
+    @include respond-to(phone-little) {
+      top: -150px;
+    }
+
+    @media only screen and (max-width: 340px) {
+      top: -175px;
+    }
+
+
+
+
   >p {
     text-align: right;
     padding-right: 0 !important;
 
     @include respond-to(phone) {
-      flex: none;
+      display: none;
+      /*flex: none;
       margin-right: 10px !important;
-      padding: 10px 0 10px !important;
+      padding: 10px 0 10px !important;*/
 
     }
 
     a {
+        display: inline-block;
         font-size: 1.2rem;
+      -webkit-transition: .3s all;
+      -moz-transition: .3s all;
+      -ms-transition: .3s all;
+      -o-transition: .3s all;
+      transition: .3s all;
 
           &:hover {
             color: #000;
@@ -53,6 +91,12 @@
 
   ul {
     width: auto;
+
+    -webkit-transition: .25s all;
+    -moz-transition: .25s all;
+    -ms-transition: .25s all;
+    -o-transition: .25s all;
+    transition: .25s all;
 
       @include respond-to(phone) {
         width: 100%;
@@ -126,7 +170,7 @@
   }
 
   &-mobile {
-    left: 0;
+    left: -12px;
     -webkit-transition: .3s all;
     -moz-transition: .3s all;
     -ms-transition: .3s all;

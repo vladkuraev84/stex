@@ -65,6 +65,12 @@
       color: $colorBody;
       opacity: .5;
       margin-top: 15px;
+      font-size: .7rem;
+
+        span {
+          display: inline-block;
+          width: 100%;
+        }
     }
   }
 
@@ -72,10 +78,7 @@
 
   &-bot {
     background-color: $bacFooterBot;
-
-    @include respond-to(phone-medium) {
-      padding-top: 20px;
-    }
+    padding-top: 20px;
 
     .container, ul {
       @include flexBox(space-between, row, center, wrap);
@@ -84,6 +87,8 @@
     p {
       color: $colorBody;
       opacity: .5;
+      margin-bottom: 6px;
+      align-self: flex-end;
 
       @include respond-to(phone-medium) {
         margin: auto;
@@ -105,8 +110,14 @@
       width: 100%;
     }
 
+    a {
+      height: 50px;
+    }
+
     span, a {
-      display: inline-block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 

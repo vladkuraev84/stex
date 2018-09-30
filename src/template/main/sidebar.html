@@ -1,18 +1,12 @@
 
-<div class="menu-icon">
-    <div class="dot"></div>
-    <div class="dot"></div>
-    <div class="dot"></div>
-</div>
-
 <div class="sidebar">
 
-    <p class="hide-mobile"><a href="/"><span class="icon-go-back-arrow"></span></a></p>
+    <p class="hide-mobile"><a href="/" class="opening-sidebar"><span class="icon-go-back-arrow"></span></a></p>
 
     <ul class="tabs">
         <li class="tab-link current" data-tab="buy-sell"><p><span class="icon-cart"></span> Buy / Sell</p></li>
-        <li class="tab-link" data-tab="send-request"><p><span class="icon-send-mail"></span> Send / Request</p></li>
-        <li class="tab-link" data-tab="address-bitcoin"><p><span class="icon-if_Bitcoin_272914"><span class="path1"></span><span class="path2"></span></span> The address of my bitcoin</p></li>
+        <li class="tab-link" data-tab="send-request"><p><span class="icon-send-mail"></span> Request / Send</p></li>
+        <li class="tab-link" data-tab="address-bitcoin"><p><span class="icon-if_Bitcoin_272914"><span class="path1"></span><span class="path2"></span></span> My Bitcoin address</p></li>
         <li class="tab-link" data-tab="account-statement"><p><span class="icon-document"></span> Account Statement</p></li>
         <li class="tab-link" data-tab="support"><p><span class="icon-settings"></span> Support</p></li>
     </ul>
@@ -21,6 +15,13 @@
 
 
 <script>
+
+    $('.opening-sidebar').click(function()
+    {
+        $('.sidebar').toggleClass('sidebar-hide');
+        return false;
+    });
+
     $('.menu-icon').click(function()
     {
         $(this).toggleClass('clicked');
