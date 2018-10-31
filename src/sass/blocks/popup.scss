@@ -57,6 +57,21 @@
         }
       }
     }
+
+    &--already {
+      padding-bottom: 1.875rem;
+
+      @include respond-to(phone) {
+        padding-bottom: 1.0rem;
+      }
+
+      .btn {
+        margin-top: 1rem;
+        min-width: 160px;
+      }
+
+    }
+
   }
   
   .title-sub {
@@ -178,6 +193,13 @@
   &.open {
     display: flex;
   }
+
+  &-succes-reset--img {
+    img {
+      width: 150px;
+    }
+  }
+
 
 }
 
