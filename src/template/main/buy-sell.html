@@ -11,7 +11,6 @@
 
     </div>
 
-
     <div class="tabs__content-buy-sell active">
 
         <div class="form-main">
@@ -20,7 +19,7 @@
                 <!--<p><span>Available balance:</span> BTC 0.00000</p>-->
             </div>
 
-            <form>
+            <!--<form>-->
 
                 <div class="form-main__item">
                     <label>
@@ -83,10 +82,10 @@
                 </div>
 
                 <div class="form-bot">
-                    <button class="btn btn-primary" type="submit">Buy</button>
+                    <button class="btn btn-primary btn-buy-sell__buy" type="submit">Buy</button>
                 </div>
 
-            </form>
+            <!--</form>-->
 
            <!-- <form>
 
@@ -128,7 +127,7 @@
                 <p><span>Available balance:</span> BTC 0.00000</p>
             </div>
 
-            <form>
+            <!--<form>-->
 
                 <div class="form-main__item">
                     <label>
@@ -189,12 +188,136 @@
                 </div>
 
                 <div class="form-bot">
-                    <button class="btn btn-primary" type="submit">Sell</button>
+                    <button class="btn btn-primary btn-buy-sell__sell" type="submit">Sell</button>
+                </div>
+
+            <!--</form>-->
+
+        </div>
+
+    </div>
+
+    <div class="tabs__content-buy-sell__sub tabs__content-buy-sell__sub--buy">
+
+        <h5 class="text-center title">How do you want to pay?</h5>
+
+        <div class="tabs__content-buy-sell__sub--top">
+
+            <ul class="tabs__content-buy-sell__sub--list">
+                <li class="btn active"><p>Visa/MC<br/> 5%</p></li>
+                <li class="btn"><p>Bank Wire<br/> 3%</p></li>
+                <li class="btn"><p>SEPA<br/> 2%</p></li>
+            </ul>
+
+        </div>
+
+        <div class="form-main">
+
+            <form>
+
+                <div class="form-main__item">
+                    <label>
+
+                        <div class="input__item">
+                            <span class="info-l">Amount: </span>
+                            <input type="text">
+                        </div>
+
+                    </label>
+                </div>
+
+                <div class="form-main__item">
+                    <label>
+
+                        <div class="input__item">
+                            <span class="info-l">Fee: </span>
+                            <input type="text">
+                        </div>
+
+                    </label>
+                </div>
+
+                <div class="form-main__item">
+                    <label>
+
+                        <div class="input__item">
+                            <span class="info-l">Total Amount: </span>
+                            <input type="text">
+                        </div>
+
+                    </label>
+                </div>
+
+                <div class="form-bot text-center">
+                    <button class="btn btn-primary" type="submit">Pay</button>
                 </div>
 
             </form>
 
         </div>
+
+
+    </div>
+
+    <div class="tabs__content-buy-sell__sub tabs__content-buy-sell__sub--sell">
+
+        <h5 class="text-center title">Where do you want to get your money?</h5>
+
+        <div class="tabs__content-buy-sell__sub--top">
+
+            <ul class="tabs__content-buy-sell__sub--list">
+                <li class="btn active"><p>Visa/MC<br/> 5%</p></li>
+                <li class="btn"><p>Bank Wire<br/> 3%</p></li>
+                <li class="btn"><p>SEPA<br/> 2%</p></li>
+            </ul>
+
+        </div>
+
+        <div class="form-main">
+
+            <!--<form>-->
+
+                <div class="form-main__item">
+                    <label>
+
+                        <div class="input__item">
+                            <span class="info-l">Amount: </span>
+                            <input type="text">
+                        </div>
+
+                    </label>
+                </div>
+
+                <div class="form-main__item">
+                    <label>
+
+                        <div class="input__item">
+                            <span class="info-l">Fee: </span>
+                            <input type="text">
+                        </div>
+
+                    </label>
+                </div>
+
+                <div class="form-main__item">
+                    <label>
+
+                        <div class="input__item">
+                            <span class="info-l">Total Amount: </span>
+                            <input type="text">
+                        </div>
+
+                    </label>
+                </div>
+
+                <div class="form-bot text-center">
+                    <button class="btn btn-primary btn-buy-sell__sell" type="submit">Sell</button>
+                </div>
+
+            <!--</form>-->
+
+        </div>
+
 
     </div>
 

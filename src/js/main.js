@@ -130,6 +130,22 @@ $(document).ready(function()
 
     });
 
+    $('.btn-buy-sell__buy').click(function() {
+
+        $(".tabs__content-buy-sell").removeClass('active');
+        $(".tabs__buy-sell--wr").hide();
+        $('.tabs__content-buy-sell__sub--buy').addClass('active');
+
+    });
+
+    $('.btn-buy-sell__sell').click(function() {
+
+        $(".tabs__content-buy-sell").removeClass('active');
+        $(".tabs__buy-sell--wr").hide();
+        $('.tabs__content-buy-sell__sub--sell').addClass('active');
+
+    });
+
 });
 
 (function($) {
@@ -149,6 +165,18 @@ $(document).ready(function()
     $(function() {
 
         $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
+            $(this)
+                .addClass('active').siblings().removeClass('active')
+                .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+        });
+
+    });
+})(jQuery);
+
+(function($) {
+    $(function() {
+
+        $('ul.tabs__content-buy-sell__sub--list').on('click', 'li:not(.active)', function() {
             $(this)
                 .addClass('active').siblings().removeClass('active')
                 .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');

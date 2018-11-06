@@ -75,6 +75,73 @@
     .form-bot {
       margin-top: 1.875rem;
     }
+
+    &__sub {
+      display: none;
+
+      &.active {
+        display: block;
+      }
+      .title {
+        font-size: 1.25rem;
+        color: #212121;
+      }
+
+      &--top, &--list {
+        @include flexBox(center, row, center, nowrap);
+        text-align: center;
+        width: auto;
+      }
+
+      &--top {
+        margin-bottom: 1.875rem;
+
+          .btn {
+            border-radius: 20px;
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+            padding: 24px 25px;
+            min-width: 12rem;
+            margin: 0 20px;
+
+              @media only screen and (max-width: 600px){
+                padding: 10px;
+                min-width: 5rem;
+                margin: 0 10px;
+              }
+          }
+
+        p {
+          margin: 0;
+          font-size: 1.125rem;
+          transition: all 0s;
+          line-height: normal;
+        }
+      }
+
+      .form-main .input__item input {
+        padding-left: 140px;
+      }
+
+      .info-l {
+        position: absolute;
+        right: auto;
+        bottom: 1px;
+        background-color: #f7f8f9;
+        color: #808386;
+        width: 135px;
+        height: 94.5%;
+        white-space: nowrap;
+        margin: 0;
+        padding: 10px 5px;
+        font-size: .95rem;
+        text-transform: uppercase;
+        border-right: 1px solid #dddfe2;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+        left: 1px;
+      }
+
+    }
   }
 
 }
